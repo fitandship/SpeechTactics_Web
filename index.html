@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+    <title>Speech Tactics</title>
+    <link rel='stylesheet' href='revslider/css/settings.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/select2.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shop.css' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <script type='text/javascript' src='revslider/js/jquery.themepunch.tools.min.js'></script>
+    <script type='text/javascript' src='revslider/js/jquery.themepunch.revolution.min.js'></script>
+    <script type="text/javascript" src="revslider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revslider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revslider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revslider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400%7CRoboto:400&display=swap" rel="stylesheet"
+        property="stylesheet" media="all" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/rs6.css">
+    <link rel="icon" href="img/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="img/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+    <script>
+        window.RS_MODULES = window.RS_MODULES || {};
+        window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+        window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+        window.RS_MODULES.defered = true;
+        window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+        window.RS_MODULES.type = 'compiled';
+    </script>
+    <script src="js/rbtools.min.js"></script>
+    <script src="js/rs6.min.js"></script>
+    <script>
+        function setREVStartSize(e) {
+            //window.requestAnimationFrame(function() {
+            window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+            window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+            try {
+                var pw = document.getElementById(e.c).parentNode.offsetWidth,
+                    newh;
+                pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+                e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+                e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+                e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+                e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+                e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+                e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+                e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+                if (e.layout === "fullscreen" || e.l === "fullscreen")
+                    newh = Math.max(e.mh, window.RSIH);
+                else {
+                    e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+                    for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+                    e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+                    e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+                    for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+                    var nl = new Array(e.rl.length),
+                        ix = 0,
+                        sl;
+                    e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+                    e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+                    e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+                    e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+                    for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+                    sl = nl[0];
+                    for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+                    var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+                    newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+                }
+                var el = document.getElementById(e.c);
+                if (el !== null && el) el.style.height = newh + "px";
+                el = document.getElementById(e.c + "_wrapper");
+                if (el !== null && el) {
+                    el.style.height = newh + "px";
+                    el.style.display = "block";
+                }
+            } catch (e) {
+                console.log("Failure at Presize of Slider:" + e)
+            }
+            //});
+        };
+    </script>
+    <div id="bbpreloading" class="bbpreloading">
+        <div class="spinner"></div>
+        <div class="random-quote"></div>
+    </div>
+    <script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false }, 'google_translate_element'); //remove the layout
+		}
+	</script>
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+		type="text/javascript"></script>
+<style>
+          	.skiptranslate.goog-te-gadget>span {
+			display: none;
+		}
+
+		.skiptranslate.goog-te-gadget {
+			font-size: 0;
+			display: flex;
+		}
+
+		div#google_translate_element {
+			display: none;
+		}
+
+		ul.translation-links {
+			list-style: none;
+			background: #fff;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			width: 100%;
+			padding: 3px 0;
+			border-radius: 3px;
+			top: 70%;
+			transition: .3s ease all;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		ul.translation-links li a {
+			display: flex;
+			align-items: center;
+			line-height: 1;
+			padding: 2px 8px;
+		}
+
+		ul.translation-links li a img {
+			display: block;
+			width: 18px;
+			margin-right: 5px;
+		}
+
+		ul.translation-links li {
+			list-style: none;
+			padding: 2px 0;
+		}
+
+		ul.translation-links li::before {
+			display: none;
+		}
+
+		.language_drop p {
+			margin: 0;
+			font-size: 15px;
+			text-transform: capitalize;
+			color: #18a0a0;
+			padding: 1px 6px;
+			border: 1px solid;
+			border-radius: 5px;
+			cursor: pointer;
+			position: relative;
+			z-index: 2;
+		}
+
+		.language_drop {
+			position: relative;
+			z-index: 1;
+			max-width: fit-content;
+		}
+
+		.language_drop:hover ul.translation-links {
+			opacity: 1;
+			visibility: visible;
+			top: 95%;
+		}
+</style>
+
+</head>
+
+<body class="home page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+        <div class='site_top_panel wave slider active'>
+            <!-- canvas -->
+            <div class='top_half_sin_wrapper'>
+                <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class='container'>
+                <div class="language_drop">
+                    <p>select language </p>
+                    <ul class="translation-links">
+                        <li><a href="#" class="spanish" data-lang="Spanish">
+                                <img src="img/st/18169.jpg" alt="">
+                                Spanish
+                            </a></li>
+                        <li><a href="#" class="german" data-lang="English">
+                                <img src="img/st/18165.jpg" alt="">
+                                English
+                            </a></li>
+                    </ul>
+                </div>
+                <!-- Code provided by Google -->
+                <div id="google_translate_element"></div>
+                <div class='row_text_search'>
+                    <div id='top_panel_text'><a href="tel:980-422-5887"><i class="fa fa-phone-square"></i>
+                        980-422-5887 </a>
+                        <a href="mailto:info@myspeechtactics.com"> <i class="fa fa-envelope-o"></i>info@myspeechtactics.com</a>
+                    </div>
+                  
+                </div>
+                <div id='top_panel_links'>
+                    <div id="top_social_links_wrapper" class="expanded">
+                        <div class="cws_social_links">
+
+                            <a href="https://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter"
+                                style="z-index: 1; transform: matrix(1, 0, 0, 1, -38, 0);">
+                                <img src="img/social/twitter.png">
+                            </a>
+
+                            <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook"
+                                style="z-index: 2; transform: matrix(1, 0, 0, 1, -76, 0);">
+                                <img src="img/social/facebook.png"></a>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Dribbble"
+                                style="z-index: 3; transform: matrix(1, 0, 0, 1, -114, 0);">
+                                <img src="img/social/linkedin.png"></a>
+
+                            </a>
+
+
+                            <a href="https://www.instagram.com/speech_tactics_nc/" class="cws_social_link" title="Instagram">
+                                <img src="img/social/instagram.png"></a>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- / top panel -->
+        <div class="benefits_area wave">
+            <!-- canvas -->
+            <div class="cloud_wrapper">
+                <canvas class="cloud" data-bg-color="#18a0a0" data-line-color="#ffffff"
+                    data-pattern-src="img/dots-pattern.png" height="1266" width="4008"></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class="container">
+                <header class='site_header logo-in-menu' data-menu-after="3">
+                    <div class="header_box">
+                        <div class="container">
+                            <!-- logo -->
+                            <div class="header_logo_part with_border" role="banner">
+                                <a class="logo" href="index.html"><img src='img/st/logo.png' data-at2x='img/st/logo.png'
+                                        alt /></a>
+                            </div>
+                            <!-- / logo -->
+                            <!-- menu -->
+                            <div class="header_nav_part">
+                                <nav class="main-nav-container a-right">
+                                    <div class="mobile_menu_header">
+                                        <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+                                    </div>
+                                    <ul id="menu-main-menu" class="main-menu">
+                                        <!-- menu item -->
+                                        <li class="menu-item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor bees-start">
+                                            <a href="index.html">
+                                                <div><span></span>
+                                                    <div class="line-one"></div>
+                                                    <div class="line-two"></div>
+                                                </div>Home
+                                                <div class="canvas_wrapper">
+                                                    <canvas class="menu_dashed"></canvas>
+                                                </div>
+                                            </a>
+                                    
+                                        </li>
+                                        <!-- / menu item -->
+                                        <!-- menu item -->
+                                        <li class="menu-item menu-item-has-children"><a href="#">About Us<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                            <span class='button_open'></span>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                </li>
+                                                <li class="menu-item"><a href="meet-the-ceo.html">Meet the CEO</a></li>
+                                                <li class="menu-item"><a href="meet-the-team.html">Meet the Team</a></li>
+                                                <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
+                                                <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+                                            
+                                            </ul>
+                                        </li>
+                                        <!-- / menu item -->
+                                        <!-- menu item -->
+                                        <li class="menu-item menu-item-has-children"><a href="#">Services<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                            <span class='button_open'></span>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                </li>
+                                                <li class="menu-item"><a href="child-services.html">Child Services</a></li>
+                                                <li class="menu-item"><a href="adult-services.html">Adult Services</a></li>
+    
+                                                <li class="menu-item menu-item-has-children"><a href="#">Programs</a>
+                                                    <span class='button_open'></span>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="student-outreach.html">Student Outreach</a></li>
+                                                        <li class="menu-item"><a href="act-now.html">ACT Now</a></li>
+                                                    </ul>
+                                                </li>              
+                                            </ul>
+                                        </li>
+                                        <!-- / menu item -->
+                                        <!-- menu item -->
+                                        <li class="menu-item menu-item-has-children right"><a href="#">Get Started<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                            <span class='button_open'></span>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                </li>
+                                                <li class="menu-item"><a href="pay-invoice.html">Make Payment</a></li>
+
+                                                <li class="menu-item menu-item-has-children"><a href="#">Forms</a>
+                                                    <span class='button_open'></span>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="#">Patient Intake Form</a></li>
+                                                        <li class="menu-item"><a href="#">HIPAA Notice</a></li>
+                                                    </ul>
+                                                </li>                                            
+                                                <li class="menu-item menu-item-has-children"><a href="#">Parent Resources</a>
+                                                    <span class='button_open'></span>
+                                                    <ul class="sub-menu">
+                                                        <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                        </li>
+                                                        <li class="menu-item"><a href="insurance.html">Insurance</a></li>
+                                                        <li class="menu-item"><a href="milestone-checker.html">Milestones Checker</a></li>
+                                                        <li class="menu-item"><a href="additional-resources.html">Additional Resources</a></li>
+                                                        <li class="menu-item"><a href="faqs.html">FAQs</a></li>
+    
+                                                    </ul>
+                                                </li>             
+                                            </ul>
+                                        </li>
+                                        <!-- / menu item -->
+                                        <!-- menu item -->
+                                        <li class="menu-item"><a href="calendar.html">Calendar<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                          
+                                        </li>
+                                        <!-- / menu item -->
+                                        <!-- menu item -->
+                                        <li class="menu-item right">
+                                            <a href="contact-us.html">
+                                                <div><span></span>
+                                                    <div class="line-one"></div>
+                                                    <div class="line-two"></div>
+                                                </div>Contact
+                                                <div class="canvas_wrapper">
+                                                    <canvas class="menu_dashed"></canvas>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- / menu item -->
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- / menu -->
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+        </div>
+
+        <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container">
+
+            <p class="rs-p-wp-fix"></p>
+            <rs-module-wrap id="rev_slider_13_1_wrapper" data-alias="speechtactics" data-source="gallery"
+                style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+                <rs-module id="rev_slider_13_1" style="" data-version="6.5.22">
+                    <rs-slides>
+                        <rs-slide style="position: absolute;" data-key="rs-55" data-title="Discover"
+                            data-thumb="img/st/Speechtact-250.jpg" data-anim="ms:500ms;" data-in="o:1;x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-250.jpg" alt="" title="mst-7" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-55-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:76px,76px,40px,40px;yo:435px,435px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:678px,678px,364px,364px;h:240px,240px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;"
+                                data-frame_1="st:500;sp:1500;sR:500;" data-frame_1_mask="u:t;"
+                                data-frame_999="y:100%;e:nothing;st:w;sp:1000;sR:7000;" data-frame_999_mask="u:t;"
+                                style="z-index:10;font-family:'Roboto Slab';">Therapy Gym
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-55-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:537px,537px,382px,282px;" data-text="l:4;"
+                                data-dim="w:490px,490px,350px,350px;h:7px,7px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;sR:500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;sR:7000;" data-frame_999_mask="u:t;"
+                                style="z-index:9;"><img src="assets/bluebar-1024x1024-1-e1596057898523.png" alt=""
+                                    class="tp-rs-img" width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-55-layer-19" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:50px,41px,30px,18px;yo:388px,323px,241px,150px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:618px,514px,384px,240px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-54" data-title="Beach"
+                            data-thumb="mst-28-1-scaled.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-092.jpg" alt="" title="mst-28" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-bg="p:40% 25%;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-54-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(0,0,0,1)||rgba(0,0,0,1)" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:450px,450px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:595px,595px,364px,364px;h:80px,80px,133px,133px;" data-frame_0="y:100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="y:100%;e:nothing;st:w;sp:1000;" data-frame_999_mask="u:t;"
+                                style="z-index:10;font-family:'Roboto Slab';">Speech Therapy
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-54-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:526px,526px,382px,282px;" data-text="l:4;"
+                                data-dim="w:['350px','350px','350px','350px'];h:5px,5px,4px,4px;"
+                                data-frame_0="x:-100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="x:100%;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:9;"><img src="img/st/Speechtact-092.jpg"
+                                    alt="" class="tp-rs-img" width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-54-layer-21" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:50px,41px,30px,18px;yo:388px,323px,241px,150px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:618px,514px,384px,240px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-52" data-title="Trip"
+                            data-thumb="img/st/Speechtact-011.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-011.jpg" alt="" title="mst-88" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-bg="p:center top;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-52-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:72px,72px,40px,40px;yo:501px,501px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:757px,757px,364px,364px;h:180px,180px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">Learn, Grow,
+                                Play
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-52-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:554px,554px,350px,350px;h:6px,6px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;" data-frame_999_mask="u:t;" style="z-index:8;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-52-layer-22" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:49px,40px,29px,18px;yo:440px,366px,274px,171px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:778px,647px,484px,302px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-53" data-title="Biking"
+                            data-thumb="img/st/Speechtact-004.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-004.jpg" alt="" title="mst-106" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-bg="p:0% 30%;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-53-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:450px,450px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:546px,546px,364px,364px;h:180px,180px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">We Make
+                                Learning Fun!
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-53-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:['350px','350px','350px','350px'];h:5px,5px,4px,4px;"
+                                data-frame_0="x:-100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="x:100%;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-53-layer-23" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:32px,26px,19px,11px;yo:422px,351px,262px,163px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:618px,514px,384px,240px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-56" data-title="Discover"
+                            data-thumb="img/st/Speechtact-056.jpg" data-anim="ms:300ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-056.jpg" alt="" title="mst-120" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-bg="p:0% 70%;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-56-layer-1" class="News-Title" data-type="text"
+                                data-color="#fff7f7||#fff7f7||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:450px,450px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:678px,678px,364px,364px;h:240px,240px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">Sensory
+                                Superheroes
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-56-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:490px,490px,350px,350px;h:7px,7px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;" data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-56-layer-24" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:48px,39px,29px,18px;yo:421px,350px,262px,163px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:618px,514px,384px,240px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-57" data-title="Discover"
+                            data-thumb="img/st/Speechtact-149.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-149.jpg" alt="" title="mst-143" width="1402" height="1252"
+                                class="rev-slidebg tp-rs-img" data-bg="p:50% 15%;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-57-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:79px,79px,40px,40px;yo:519px,519px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:678px,678px,364px,364px;h:240px,240px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">Believe In
+                                Yourself
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-57-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:490px,490px,350px,350px;h:7px,7px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;" data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-57-layer-25" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:60px,49px,36px,22px;yo:452px,376px,281px,175px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:678px,564px,422px,264px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-58" data-title="Discover"
+                            data-thumb="img/st/Speechtact-199.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-199.jpg" alt="" title="mst-157" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-58-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:180px,180px,40px,40px;yo:450px,450px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:678px,678px,364px,264px;h:340px,240px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">Therapeutic
+                                Listening
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-58-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:490px,490px,350px,350px;h:7px,7px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;" data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-58-layer-26" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:50px,41px,30px,18px;yo:417px,347px,259px,162px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:577px,480px,359px,224px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-59" data-title="Trip"
+                            data-thumb="img/st/Speechtact-168.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="img/st/Speechtact-168.jpg" alt="" title="mst-164" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-59-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(255,255,255,1)||rgba(255,255,255,1)" data-rsp_ch="on"
+                                data-xy="xo:81px,81px,40px,40px;yo:515px,515px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:650px,650px,364px,364px;h:180px,180px,133px,133px;"
+                                data-frame_0="y:100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="y:100%;e:nothing;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:10;font-family:'Roboto Slab';">Autism Is Our
+                                Jam!
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-59-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:592px,592px,382px,282px;" data-text="l:4;"
+                                data-dim="w:542px,542px,350px,350px;h:6px,6px,4px,4px;" data-frame_0="x:-100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="x:100%;st:w;sp:1000;" data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-59-layer-27" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:53px,44px,32px,20px;yo:443px,368px,275px,172px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:710px,591px,442px,276px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                        <rs-slide style="position: absolute;" data-key="rs-60" data-title="Beach"
+                            data-thumb="assets/mst-58-1-scaled.jpg" data-anim="ms:500ms;r:0;" data-in="x:(100%);"
+                            data-out="a:false;">
+                            <img src="assets/mst-58-1-scaled.jpg" alt="" title="mst-58" width="2560" height="2560"
+                                class="rev-slidebg tp-rs-img" data-bg="p:0% 40%;" data-parallax="10" data-no-retina>
+                            <!--
+							-->
+                            <rs-layer id="slider-13-slide-60-layer-1" class="News-Title" data-type="text"
+                                data-color="#424344||#424344||rgba(0,0,0,1)||rgba(0,0,0,1)" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:450px,450px,250px,150px;"
+                                data-text="w:normal;s:70;l:60;"
+                                data-dim="w:473px,473px,364px,364px;h:147px,147px,133px,133px;"
+                                data-actions='o:click;a:jumptoslide;slide:next;' data-frame_0="y:100%;o:1;"
+                                data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;" data-frame_1_mask="u:t;"
+                                data-frame_999="y:100%;e:nothing;st:w;sp:1000;" data-frame_999_mask="u:t;"
+                                style="z-index:10;font-family:'Roboto Slab';">Occupational Therapy
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-60-layer-2" data-type="image" data-rsp_ch="on"
+                                data-xy="xo:80px,80px,40px,40px;yo:587px,587px,382px,282px;" data-text="l:4;"
+                                data-dim="w:['350px','350px','350px','350px'];h:5px,5px,4px,4px;"
+                                data-frame_0="x:-100%;o:1;" data-frame_0_mask="u:t;" data-frame_1="st:500;sp:1500;"
+                                data-frame_1_mask="u:t;" data-frame_999="x:100%;st:w;sp:1000;"
+                                data-frame_999_mask="u:t;" style="z-index:9;"><img
+                                    src="assets/bluebar-1024x1024-1-e1596057898523.png" alt="" class="tp-rs-img"
+                                    width="350" height="5" data-no-retina>
+                            </rs-layer>
+                            <!--
+
+							-->
+                            <rs-layer id="slider-13-slide-60-layer-28" data-type="shape" data-rsp_ch="on"
+                                data-xy="xo:52px,43px,32px,20px;yo:408px,339px,253px,158px;"
+                                data-text="w:normal;s:20,16,11,6;l:0,20,14,8;"
+                                data-dim="w:539px,448px,335px,209px;h:221px,183px,137px,85px;"
+                                data-frame_1="st:950;sR:950;" data-frame_999="o:0;st:w;sR:7750;"
+                                style="z-index:8;background-color:rgba(255,255,255,0.46);">
+                            </rs-layer>
+                            <!--
+-->
+                        </rs-slide>
+                    </rs-slides>
+                </rs-module>
+                <script>
+
+                </script>
+                <script>
+                    if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
+                </script>
+            </rs-module-wrap>
+        </div>
+
+        <div class="cloud_wrapper">
+            <canvas class="white_cloud"></canvas>
+        </div>
+
+
+        <!-- / canvas -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern conatainer / -->
+                <div class='left-pattern pattern pattern-2'></div>
+                <main>
+
+                    <div class="ce clearfix" style="padding-top: 35px">
+						<h3 class="ce_title" style="text-align: center; font-size: 50px; color: #18a0a0">Here's <span
+								style="color: #fec20b;">WHAT</span> we do what we do at Speech Tactics</h3>
+
+					</div>
+
+					<div class="grid_row clearfix" style="padding-top: 30px">
+						<div class="grid_col grid_col_12">
+							<img style="width:100%; height: 30%;" id="image" src="img/homeimage.png">
+
+						</div>
+
+					</div>
+
+                    
+                    <!-- divider -->
+                    <div class='grid_row clearfix' style='padding-top: 30px;'>
+                        <div class='grid_col grid_col_12'>
+                            <div class='ce clearfix'>
+                                <div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / divider -->
+                    <!-- section -->
+                    <div class='grid_row clearfix' >
+                        <div class='grid_col grid_col_8'>
+                            <!-- about us -->
+                            <div class='ce clearfix'>
+                                <div>
+                                    <h3 class="ce_title">We’re In This Together <span>Together!</span></h3>
+                                    <p style="color:black">Speech Tactics, since 2012, has been committed to <strong>implementing
+                                            effective, research-based therapeutic interventions</strong> to make
+                                        sure our clients reach their optimal potential and achieve their
+                                        functional therapy goals. Our team of dedicated professionals works
+                                        closely together to collaborate, develop, and implement individualized
+                                        therapy plans for our clients and families. It is our philosophy that
+                                        every family and child we serve deserves to be treated with compassion
+                                        and viewed with open-mindedness. This enables us to employ a holistic
+                                        approach to effectively treat our clients’ specific needs in the areas
+                                        of speech, language, feeding/swallowing, cognition, and many other
+                                        activities of daily living. The most important players on our team are
+                                        our wonderful parents, whom we rely on to carry over strategies and
+                                        techniques in the home setting to ensure our clients receive ongoing
+                                        practice and application in their natural environments outside of our
+                                        clinic. Parents are a child’s greatest advocate, and our team at Speech
+                                        Tactics is here to help support and strengthen that advocacy.&nbsp;
+                                        Remember… We’re all in this together!</p>
+
+                                    <a href="our-history.html" class="cws_button alt medium"><span
+                                            class="cws_button_inner" data-bg_hover_color="" data-bg_color=""
+                                            data-text_color="">More About Us</span></a>
+                                    <!-- <a href='our-history.html' class='cws_button small'>More About Us</a> -->
+                                </div>
+                            </div>
+                            <!-- / about us -->
+                        </div>
+                        <div class='grid_col grid_col_4'>
+                            <div class='ce clearfix'>
+                                <div>
+                                    <p><img class="alignnone wp-image-6447 size-medium image-type"
+                                            src="img/st/Speechtact-198.jpg" alt="" width="550" height="250"
+                                            srcset="img/st/Speechtact-198.jpg 500w, img/st/Speechtact-198.jpg 1024w, img/st/Speechtact-198.jpg 150w, img/st/Speechtact-198.jpg 768w, img/st/Speechtact-198.jpg 1536w, img/st/Speechtact-198.jpg 2048w, img/st/Speechtact-198.jpg 100w, img/st/Speechtact-198.jpg 230w, img/st/Speechtact-198.jpg 1920w"
+                                            sizes="(max-width: 300px) 100vw, 300px"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / section -->
+
+                    <!-- divider -->
+                    <div class='grid_row clearfix' style='padding-bottom: 50px;'>
+                        <div class='grid_col grid_col_12'>
+                            <div class='ce clearfix'>
+                                <div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / divider -->
+                    <br />
+                  
+                    <!-- heading section -->
+                    <div class='grid_row clearfix'>
+                        <div class='grid_col grid_col_12'>
+                            <div class='ce clearfix'>
+                                <div>
+                                    <h3 class="ce_title" style="text-align: center;">Here's <span>WHY</span> we do what
+                                        we do at Speech Tactics
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / heading section -->
+
+                    <div class="benefits_area wave">
+                        <div class="cloud_wrapper">
+                            <canvas class="cloud" data-bg-color="#18a0a0" data-line-color="#ffffff"
+                                data-pattern-src="img/dots-pattern.png" height="1206" width="5760"
+                                style="width: 1920px; height: 402px;"></canvas>
+                        </div>
+                        <div class="container" style="	width: 1270px">
+                            <!-- benefits -->
+                            <div class="benefits_container">
+                                <!-- benefits item -->
+                                <div class="cws-widget">
+                                    <div class="widget-title">
+                                        <div class="widget_title_box">
+                                            <br/>
+                                            <div class="widget_title_text_section" style="color: white">Student Outreach Initiative
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <!-- benefits item -->
+                                <!-- / benefits item -->
+                                <div class="cws-widget">
+                                    <div class="widget-title">
+                                        <div class="widget_title_box">
+                                            <br/>
+                                            <div class="widget_title_text_section" style="color: white">Act Now Community Outreach
+
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <!-- benefits item -->
+                                <!-- / benefits item -->
+                                <div class="cws-widget">
+                                    <div class="widget-title">
+                                        <div class="widget_title_box">
+                                            <br/>
+                                            <div class="widget_title_text_section" style="color: white">Community Service Initiative 
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <!-- / benefits item -->
+                                <!-- / benefits item -->
+                                <div class="cws-widget">
+                                    <div class="widget-title">
+                                        <div class="widget_title_box">
+                                            <br/>
+                                            <div class="widget_title_text_section" style="color: white">Parent Engagement, Advocacy, & Support
+                                            </div>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                                <!-- / benefits item -->
+                            </div>
+                            <!-- / benefits -->
+                        </div>
+                    </div>
+
+                    <!-- section gallery -->
+                    <div class='grid_row clearfix' style='padding-top: 50px;'>
+                        <div class='grid_col grid_col_12'>
+                            <div>
+                                <h3 class="ce_title" style="text-align: center; font-size: 50px; color: #18a0a0">
+                                    Testimonials
+                                    </span></h3>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="grid_row clearfix">
+                        <div class="grid_col grid_col_6">
+                            <div class="ce clearfix">
+                                <div>
+                                    <div class="testimonial clearfix" style="background-color:#CC3300">
+                                        <div class="quote">I am very happy with the progress my son has made when
+                                            starting Speech Tactics he now makes complete sentences, and expresses his
+                                            feelings also can differentiate past present. Front office staff is also
+                                            very helpful.
+                                        </div>
+                                        <figure class="author">
+                                            <figcaption>Emmanuel R</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_col grid_col_6">
+                            <div class="ce clearfix">
+                                <div>
+                                    <div class="testimonial clearfix" style="background-color:#CC3300">
+                                        <div class="quote">My son is a patient here and we have nothing short of an
+                                            amazing experiences so far. Each employee has been extremely helpful and
+                                            attentive. I recommend them for any parents trying to navigate treatment
+                                            their children.
+                                        </div>
+                                        <figure class="author">
+                                            <figcaption>Morgan C</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="text-align: center;"><a href="./testimonials.html" class="cws_button alt large"><span
+                                class="cws_button_inner" data-bg_hover_color="" data-bg_color="" data-text_color="">Read
+                                More</span></a></p>
+                </main>
+                <!-- pettaren container / -->
+                <div class='right-pattern pattern pattern-2'></div>
+                <!-- footer image container / -->
+                <div class="footer_image" style="height:81px;">
+                    <style type="text/css">
+                        .page_content>.footer_image {
+                            background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+                        }
+
+                        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (min--moz-device-pixel-ratio: 1.5),
+                        only screen and (-o-device-pixel-ratio: 3/2),
+                        only screen and (min-device-pixel-ratio: 1.5) {
+                            .page_content>.footer_image {
+                                background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+                                background-size: 734px;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                            result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- / svg filter -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <div class='footer_wrapper_copyright' style="background-image: url(img/dots-pattern.png);">
+            <div class='half_sin_wrapper'><canvas class='half_sin' data-bg-color='15, 96, 96'
+                    data-line-color='15, 96, 96'></canvas></div>
+            <footer class='page_footer'>
+                <div class='container'>
+                    <div class='footer_container'>
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Our Locations</div>
+                            <div class="post_date"><strong style="color: #FECC1B"> Charlotte Office: </strong></div>8848
+                            Red Oak Blvd, STE AA,
+                            Charlotte, NC
+                            28217 <br /> <br /> <strong style="color: #FECC1B">Monroe Office: </strong><br />1902 W.
+                            Roosevelt Blvd. Suite C,
+                            Monroe, NC
+                            28110
+                        </div>
+
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Contact Us</div>
+
+                            <p class="post_date"> Email: info@myspeechtactics.com
+                                <br />
+                                Phone: 980-422-5887
+                                <br />
+                                Fax: 980-225-0025
+                            </p>
+                        </div>
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Site Index</div>
+
+                            <div class="post_date"><a style="color: #FECC1B" href="our-history">About Us</a></div>
+                        
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="child-services.html">Child Services</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="adult-services.html">Adult Services</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                        href="careers.html">Careers</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="contact-us.html">Contact Us</a></div>
+                        </div>
+                        <!-- <div class="textwidget cws-widget">
+							<div class="widget-title">Certifications</div>
+							<div class="textwidget custom-html-widget"><img src="img/st/Certifications-1.png"
+									width="200px" alt="" /></div>
+						</div> -->
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Join the ST Community</div>
+
+                            <div class='cws_social_links'>
+                                <a href="http://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter">
+                                    <img src="img/social/twitter.png">
+                                </a>
+
+                                <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook">
+                                    <img src="img/social/facebook.png"></a>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Linkedin">
+                                    <img src="img/social/linkedin.png"></a>
+
+                                </a>
+
+                                <a href="https://instagram.com/speech_tactics_nc" class="cws_social_link" title="Instagram">
+                                    <img src="img/social/instagram.png"></a>
+
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <div class='copyrights_area'>
+                <div class='half_sin_wrapper'><canvas class='footer_half_sin' data-bg-color='8, 56, 56'
+                        data-line-color='8,56,56'></canvas></div>
+                <div class='container a-center'>
+                    <div class='copyrights_container logo-center'>
+                        <div class='copyrights' style="color: white">Copyright ©2020 Speech Tactics</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="index.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag"
+                        title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var tpj = jQuery;
+        if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+        if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+        RS_MODULES.modules["revslider131"] = {
+            once: RS_MODULES.modules["revslider131"] !== undefined ? RS_MODULES.modules["revslider131"].once : undefined, init: function () {
+                window.revapi13 = window.revapi13 === undefined || window.revapi13 === null || window.revapi13.length === 0 ? document.getElementById("rev_slider_13_1") : window.revapi13;
+                if (window.revapi13 === null || window.revapi13 === undefined || window.revapi13.length == 0) { window.revapi13initTry = window.revapi13initTry === undefined ? 0 : window.revapi13initTry + 1; if (window.revapi13initTry < 20) requestAnimationFrame(function () { RS_MODULES.modules["revslider131"].init() }); return; }
+                window.revapi13 = jQuery(window.revapi13);
+                jQuery.noConflict();
+                if (window.revapi13.revolution == undefined) { revslider_showDoubleJqueryError("rev_slider_13_1"); return; }
+                revapi13.revolutionInit({
+                    revapi: "revapi13",
+                    DPR: "dpr",
+                    sliderLayout: "fullwidth",
+                    visibilityLevels: "1240,1024,778,480",
+                    gridwidth: "1230,1024,767,480",
+                    gridheight: "720,720,480,360",
+                    perspective: 600,
+                    perspectiveType: "local",
+                    editorheight: "720,720,480,360",
+                    responsiveLevels: "1240,1024,778,480",
+                    progressBar: {
+                        color: "#65d879",
+                        vertical: "top",
+                        size: 6,
+                        x: 0,
+                        y: 0
+                    },
+                    navigation: {
+                        mouseScrollNavigation: false,
+                        wheelCallDelay: 1000,
+                        onHoverStop: false,
+                        touch: {
+                            touchenabled: true
+                        },
+                        arrows: {
+                            enable: true,
+                            style: "hephaistos",
+                            left: {
+                                h_offset: 15
+                            },
+                            right: {
+                                h_offset: 15
+                            }
+                        }
+                    },
+                    parallax: {
+                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 47, 48, 49, 50, 51, 30],
+                        type: "scroll"
+                    },
+                    fanim: {
+                        in: { "o": 0 },
+                        out: { "a": false },
+                        speed: 1000
+                    },
+                    viewPort: {
+                        global: false,
+                        globalDist: "-200px",
+                        enable: true,
+                        outof: "pause",
+                        visible_area: "20%"
+                    },
+                    fallbacks: {
+                        allowHTML5AutoPlayOnAndroid: true
+                    },
+                });
+
+            }
+        } // End of RevInitScript
+        if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
+    </script>
+    <style>
+        
+.widget_title_text_section {
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 20px;
+}
+        .service_grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px;
+}
+
+        .footer_wrapper_copyright {
+            background-color: #18a0a0;
+        }
+
+        .grid_row:not(:first-child) {
+            padding-top: 0px;
+        }
+
+        .cws_callout,
+        .header_logo_part.with_border .logo>img {
+            height: 90px;
+            width: 190px;
+        }
+
+        .header_logo_part.with_border .logo {
+            background-color: white !important;
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 50%
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.rs-touchhover {
+            background: #000000
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows:before {
+            font-family: 'revicons';
+            font-size: 18px;
+            color: #ffffff;
+            display: block;
+            line-height: 40px;
+            text-align: center
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.tp-leftarrow:before {
+            content: '\e82c';
+            margin-left: -2px
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.tp-rightarrow:before {
+            content: '\e82d';
+            margin-right: -2px
+        }
+    </style>
+    <script>
+        window.onload = function loaderPreloader() {
+            document.getElementById("bbpreloading").className = "bbpreloading hidepreloader";
+        };
+    </script>
+
+  <script type='text/javascript' src='js/retina_1.3.0.js'></script>
+  <script type='text/javascript' src='js/modernizr.js'></script>
+  <script type='text/javascript' src='js/owl.carousel.js'></script>
+  <script type='text/javascript' src='js/TweenMax.min.js'></script>
+  <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+  <script type='text/javascript' src='js/jquery.fancybox.js'></script>
+  <script type='text/javascript' src='js/select2.min.js'></script>
+  <script type='text/javascript' src='js/wow.min.js'></script>
+  <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+  <script type='text/javascript' src="js/jquery.form.min.js"></script>
+  <script type='text/javascript' src='js/scripts.js'></script>
+  <script type='text/javascript' src="js/jquery.tweet.js"></script>
+
+  <script type="text/javascript">
+      function triggerHtmlEvent(element, eventName) {
+          var event;
+          if (document.createEvent) {
+              event = document.createEvent('HTMLEvents');
+              event.initEvent(eventName, true, true);
+              element.dispatchEvent(event);
+          } else {
+              event = document.createEventObject();
+              event.eventType = eventName;
+              element.fireEvent('on' + event.eventType, event);
+          }
+      }
+
+      $('.translation-links a').click(function (e) {
+          e.preventDefault();
+          var lang = $(this).data('lang');
+          $('#google_translate_element select option').each(function () {
+              if ($(this).text().indexOf(lang) > -1) {
+                  $(this).parent().val($(this).val());
+                  var container = document.getElementById('google_translate_element');
+                  var select = container.getElementsByTagName('select')[0];
+                  triggerHtmlEvent(select, 'change');
+              }
+          });
+      });
+  </script>
+</body>
+
+</html>

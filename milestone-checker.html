@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+    <title>Speech Tactics</title>
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/select2.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shop.css' type='text/css' media='all' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+    <link rel="icon" href="img/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="img/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="img/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+    <div id="bbpreloading" class="bbpreloading">
+        <div class="spinner"></div>
+        <div class="random-quote"></div>
+    </div>
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false }, 'google_translate_element'); //remove the layout
+		}
+	</script>
+	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+		type="text/javascript"></script>
+<style>
+          	.skiptranslate.goog-te-gadget>span {
+			display: none;
+		}
+
+		.skiptranslate.goog-te-gadget {
+			font-size: 0;
+			display: flex;
+		}
+
+		div#google_translate_element {
+			display: none;
+		}
+
+		ul.translation-links {
+			list-style: none;
+			background: #fff;
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			width: 100%;
+			padding: 3px 0;
+			border-radius: 3px;
+			top: 70%;
+			transition: .3s ease all;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		ul.translation-links li a {
+			display: flex;
+			align-items: center;
+			line-height: 1;
+			padding: 2px 8px;
+		}
+
+		ul.translation-links li a img {
+			display: block;
+			width: 18px;
+			margin-right: 5px;
+		}
+
+		ul.translation-links li {
+			list-style: none;
+			padding: 2px 0;
+		}
+
+		ul.translation-links li::before {
+			display: none;
+		}
+
+		.language_drop p {
+			margin: 0;
+			font-size: 15px;
+			text-transform: capitalize;
+			color: #18a0a0;
+			padding: 1px 6px;
+			border: 1px solid;
+			border-radius: 5px;
+			cursor: pointer;
+			position: relative;
+			z-index: 2;
+		}
+
+		.language_drop {
+			position: relative;
+			z-index: 1;
+			max-width: fit-content;
+		}
+
+		.language_drop:hover ul.translation-links {
+			opacity: 1;
+			visibility: visible;
+			top: 95%;
+		}
+</style>
+</head>
+
+<body class="page wide wave-style">
+    <div class="page">
+        <!-- top panel -->
+        <div class='site_top_panel wave slider active'>
+            <!-- canvas -->
+            <div class='top_half_sin_wrapper'>
+                <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+            </div>
+            <!-- / canvas -->
+            <div class='container'>
+                <div class="language_drop">
+                    <p>select language </p>
+                    <ul class="translation-links">
+                        <li><a href="#" class="spanish" data-lang="Spanish">
+                                <img src="img/st/18169.jpg" alt="">
+                                Spanish
+                            </a></li>
+                        <li><a href="#" class="german" data-lang="English">
+                                <img src="img/st/18165.jpg" alt="">
+                                English
+                            </a></li>
+                    </ul>
+                </div>
+                <!-- Code provided by Google -->
+                <div id="google_translate_element"></div>
+                <div class='row_text_search'>
+                    <div id='top_panel_text'><a href="tel:980-422-5887"><i class="fa fa-phone-square"></i>
+                        980-422-5887 </a>
+                        <a href="mailto:info@myspeechtactics.com"> <i class="fa fa-envelope-o"></i>info@myspeechtactics.com</a>
+                    </div>
+                  
+                </div>
+                <div id='top_panel_links'>
+                    <div id="top_social_links_wrapper" class="expanded">
+                        <div class="cws_social_links">
+
+                            <a href="https://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter"
+                                style="z-index: 1; transform: matrix(1, 0, 0, 1, -38, 0);">
+                                <img src="img/social/twitter.png">
+                            </a>
+
+                            <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook"
+                                style="z-index: 2; transform: matrix(1, 0, 0, 1, -76, 0);">
+                                <img src="img/social/facebook.png"></a>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Dribbble"
+                                style="z-index: 3; transform: matrix(1, 0, 0, 1, -114, 0);">
+                                <img src="img/social/linkedin.png"></a>
+
+                            </a>
+
+
+                            <a href="https://www.instagram.com/speech_tactics_nc/" class="cws_social_link" title="Instagram">
+                                <img src="img/social/instagram.png"></a>
+
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- / top panel -->
+        <!-- header container -->
+        <div class='header_cont'>
+            <div class='header_mask'>
+                <div class='header_pattern'></div>
+                <div class='header_img'></div>
+            </div>
+            <header class='site_header logo-in-menu' data-menu-after="3">
+                <div class="header_box">
+                    <div class="container">
+                        <!-- logo -->
+                        <div class="header_logo_part with_border" role="banner">
+                            <a class="logo" href="index.html"><img src='img/st/logo.png' data-at2x='img/st/logo.png' alt /></a>
+                        </div>
+                        <!-- / logo -->
+                        <!-- menu -->
+                        <div class="header_nav_part">
+                            <nav class="main-nav-container a-right">
+                                <div class="mobile_menu_header">
+                                    <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+                                </div>
+                                <ul id="menu-main-menu" class="main-menu">
+                                    <!-- menu item -->
+                                    <li class="menu-item bees-start">
+                                        <a href="index.html">
+                                            <div><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>Home
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+                                
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a href="#">About Us<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="meet-the-ceo.html">Meet the CEO</a></li>
+                                            <li class="menu-item"><a href="meet-the-team.html">Meet the Team</a></li>
+                                            <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item menu-item-has-children"><a href="#">Services<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+                                            <li class="menu-item"><a href="child-services.html">Child Services</a></li>
+                                            <li class="menu-item"><a href="adult-services.html">Adult Services</a></li>
+
+                                            <li class="menu-item menu-item-has-children"><a href="#">Programs</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="student-outreach.html">Student Outreach</a></li>
+                                                    <li class="menu-item"><a href="act-now.html">ACT Now</a></li>
+                                                </ul>
+                                            </li>              
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children right"><a href="#">Get Started<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                        <span class='button_open'></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                            </li>
+											<li class="menu-item"><a href="pay-invoice.html">Make Payment</a></li>
+
+                                            <li class="menu-item menu-item-has-children"><a href="#">Forms</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="#">Patient Intake Form</a></li>
+                                                    <li class="menu-item"><a href="#">HIPAA Notice</a></li>
+                                                </ul>
+                                            </li>                                            
+                                            <li class="menu-item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"><a href="#">Parent Resources</a>
+                                                <span class='button_open'></span>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+                                                    </li>
+                                                    <li class="menu-item"><a href="insurance.html">Insurance</a></li>
+                                                    <li class="menu-item current-menu-item page_item current_page_item"><a href="milestone-checker.html">Milestones Checker</a></li>
+                                                    <li class="menu-item"><a href="additional-resources.html">Additional Resources</a></li>
+                                                    <li class="menu-item"><a href="faqs.html">FAQs</a></li>
+
+                                                </ul>
+                                            </li>             
+                                        </ul>
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item"><a href="calendar.html">Calendar<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+                                      
+                                    </li>
+                                    <!-- / menu item -->
+                                    <!-- menu item -->
+                                    <li class="menu-item right">
+                                        <a href="contact-us.html">
+                                            <div><span></span>
+                                                <div class="line-one"></div>
+                                                <div class="line-two"></div>
+                                            </div>Contact
+                                            <div class="canvas_wrapper">
+                                                <canvas class="menu_dashed"></canvas>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- / menu item -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- #masthead -->
+        </div>
+        <!-- breadcrumbs -->
+        <section class='page_title wave'>
+            <div class='container'>
+                <div class='title'>
+                    <h1>Milestone Checker</h1></div>
+                <nav class="bread-crumbs"><a href="index.html" >Additional Resources</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Milestone Checker</span></nav>
+                <!-- .breadcrumbs -->
+            </div>
+            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+        </section>
+        <!-- / breadcrumbs -->
+        <!-- main container -->
+        <div id="main" class="site-main">
+            <div class="page_content">
+                <!-- pattern container / -->
+                <div class='left-pattern pattern pattern-2'></div>
+                <!-- main content -->
+                <main>
+                    <div class="grid_row clearfix" style="padding-bottom: 0px;">
+						<div class="grid_col grid_col_12">
+							<div class="ce clearfix">
+								<h3 class="ce_title">
+								</h3>
+								<div>
+									<p>Children grow and develop so quickly,&nbsp; sometimes it’s difficult to keep up
+										with their developmental milestones. Most parents often wonder whether or not
+										their child is achieving the expected developmental milestones that coincide
+										with his/her chronological age.&nbsp; A developmental delay is determined when a
+										child has reached a certain chronological age but has not achieved the
+										developmental milestones expected at that age. It is important to note that not
+										all children share the same developmental profile, therefore two same-age
+										children who appear different may demonstrate appropriate developmental skills
+										for their chronological age. On the other hand, there are some children who
+										display very subtle signs of developmental delay and very overt signs of
+										developmental delay. Either way, if you are a parent with even the slightest
+										concerns or questions about your child’s development you would be happy to know
+										that Speech Tactics offers <strong>FREE</strong> &nbsp;speech-language and
+										occupational screenings through our <strong>ACT NOW</strong>&nbsp; Check out our
+										developmental milestones tracker tool below. Please don’t hesitate to take
+										advantage of our free screening program… That’s what we are here for!</p>
+								</div>
+							</div>
+							<div class="ce clearfix">
+								<div class="cws_ce_content ce_accordion">
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>2
+												Months</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Begins to smile at people</li>
+												<li>Can briefly calm himself (may bring hands to mouth and suck on hand)
+												</li>
+												<li>Tries to look at the parent</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Coos and makes gurgling sounds</li>
+												<li>Turns head toward sounds</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Pays attention to faces</li>
+												<li>Begins to follow things with eyes and recognize people at a distance
+												</li>
+												<li>Begins to act bored (cries, fussy) if an activity doesn’t change
+												</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Can hold head up and begins to push up when lying on tummy</li>
+												<li>Makes smoother movements with arms and legs</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>4
+												Months</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Smiles spontaneously, especially at people</li>
+												<li>Likes to play with people and might cry when playing stops</li>
+												<li>Copies some movements and facial expressions, like smiling or
+													frowning</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Begins to babble</li>
+												<li>Babbles with expressions and copies sounds he hears</li>
+												<li>Cries in different ways to show hunger, pain or being tired</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Lets you know if she is happy or sad</li>
+												<li>Responds to affection</li>
+												<li>Reaches for a toy with one hand</li>
+												<li>Uses hand and eyes together such as seeing a toy and reaching for it
+												</li>
+												<li>Follows moving things with eyes from side to side</li>
+												<li>Watches faces closely</li>
+												<li>Recognizes familiar people and things at a distance</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Holds head steady, unsupported</li>
+												<li>Pushes down on legs when feet are on a hard surface</li>
+												<li>May be able to roll over from tummy to back</li>
+												<li>Can hold a toy and shake it and swing at dangling toys</li>
+												<li>Brings hands to mouth</li>
+												<li>When lying on stomach, pushes up to elbows</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>6
+												Months</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Knows familiar faces and begins to know if someone is a
+													stranger&nbsp;</li>
+												<li>Likes to play with others, especially parents</li>
+												<li>Responds to other people’s emotions and often seems happy</li>
+												<li>Likes to look at self in a mirror</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Responds to sounds by making sounds</li>
+												<li>Strings vowels together when babbling (“ah,” “eh,” “oh”) and likes
+													taking turns with the parent while making sounds</li>
+												<li>Responds to own name</li>
+												<li>Makes sounds to show joy and displeasure</li>
+												<li>Begins to say consonant sounds (jabbering with “m,” “b”)</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Looks around at things nearby</li>
+												<li>Brings things to mouth</li>
+												<li>Shows curiosity about things and tries to get things that are out of
+													reach</li>
+												<li>Begins to pass things from one hand to the other</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Rolls over in both directions (front to back, back to front)</li>
+												<li>Begins to sit without support</li>
+												<li>When standing, supports weight on legs and might bounce</li>
+												<li>Rocks back and forth, sometimes crawling backward before moving
+													forward</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>9
+												Months</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>May be afraid of strangers</li>
+												<li>May be clingy with familiar adults</li>
+												<li>Has favorite toys</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Understands “no”</li>
+												<li>Makes a lot of different sounds like “mamamama” and “bababababa”
+												</li>
+												<li>Copies sounds and gestures of others</li>
+												<li>Uses fingers to point at things</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Watches the path of something as it falls</li>
+												<li>Looks for things he sees you hide</li>
+												<li>Plays peek-a-boo</li>
+												<li>Puts things in her mouth</li>
+												<li>Moves things smoothly from one hand to the other</li>
+												<li>Picks up things like cereal o’s between thumb and index finger</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Stands, holding on</li>
+												<li>Can get into sitting position</li>
+												<li>Sits without support</li>
+												<li>Pulls to stand</li>
+												<li>Crawls</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>1
+												Year</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Is shy or nervous with strangers</li>
+												<li>Cries when mom or dad leaves</li>
+												<li>Has favorite things and people</li>
+												<li>Shows fear in some situations</li>
+												<li>Hands you a book when he wants to hear a story</li>
+												<li>Repeats sounds or actions to get attention</li>
+												<li>Puts out arm or leg to help with dressing</li>
+												<li>Plays games such as “peek-a-boo” and “pat-a-cake”</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Responds to simple spoken requests</li>
+												<li>Uses simple gestures, like shaking head “no” or waving “bye-bye”
+												</li>
+												<li>Makes sounds with changes in tone (sounds more like speech)</li>
+												<li>Says “mama” and “dada” and exclamations like “uh-oh!”</li>
+												<li>Tries to say words you say</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Explores things in different ways, like shaking, banging, throwing
+												</li>
+												<li>Finds hidden things easily</li>
+												<li>Looks at the right picture or thing when it’s named</li>
+												<li>Copies gestures</li>
+												<li>Starts to use things correctly; for example, drinks from a cup,
+													brushes hair</li>
+												<li>Bangs two things together</li>
+												<li>Puts things in a container, takes things out of a container</li>
+												<li>Lets things go without help</li>
+												<li>Pokes with index (pointer) finger</li>
+												<li>Follows simple directions like “pick up the toy”</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>18
+												Months</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Likes to hand things to others as play</li>
+												<li>May have temper tantrums</li>
+												<li>May be afraid of strangers</li>
+												<li>Shows affection to familiar people</li>
+												<li>Plays simple pretend, such as feeding a doll</li>
+												<li>May cling to caregivers in new situations</li>
+												<li>Points to show others something interesting</li>
+												<li>Explores alone but with parent close by</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Says several single words</li>
+												<li>Says and shakes head “no”</li>
+												<li>Points to show someone what he wants</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Knows what ordinary things are for, for example, telephone, brush,
+													spoon</li>
+												<li>Points to get the attention of others</li>
+												<li>Shows interest in a doll or stuffed animal by pretending to feed
+												</li>
+												<li>Points to one body part</li>
+												<li>Scribbles on his own</li>
+												<li>Can follow 1-step verbal commands without any gestures; for example,
+													sits when you say “sit down”</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Walks alone</li>
+												<li>May walk up steps and run</li>
+												<li>Pulls toys while walking</li>
+												<li>Can help undress herself</li>
+												<li>Drinks from a cup</li>
+												<li>Eats with a spoon</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>2
+												Years</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>&nbsp;Copies others, especially adults and older children</li>
+												<li>Gets excited when with other children</li>
+												<li>Shows more and more independence</li>
+												<li>Shows defiant behavior (doing what he has been told not to)</li>
+												<li>Plays mainly beside other children, but is beginning to include
+													other children, such as in chase games</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Points to things or pictures when they are named</li>
+												<li>Knows names of familiar people and body parts</li>
+												<li>Says sentences with 2 to 4 words</li>
+												<li>Follows simple instructions</li>
+												<li>Repeats words overheard in conversation</li>
+												<li>Points to things in a book</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Finds things even when hidden under two or three covers</li>
+												<li>Begins to sort shapes and colors</li>
+												<li>Completes sentences and rhymes in familiar books</li>
+												<li>Plays simple make-believe games</li>
+												<li>Builds towers of 4 or more blocks</li>
+												<li>Might use one hand more than the other</li>
+												<li>Follows two-step instructions such as “Pick up your shoes and put
+													them in the closet.”</li>
+												<li>Names items in a picture book such as a cat, bird, or dog</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>&nbsp;Stands on tiptoe</li>
+												<li>Kicks a ball</li>
+												<li>Begins to run</li>
+												<li>Climbs onto and down from furniture without help</li>
+												<li>Walks up and down stairs holding on</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>3
+												Years</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Copies adults and friends</li>
+												<li>Shows affection for friends without prompting</li>
+												<li>Takes turns in games</li>
+												<li>Shows concern for a crying friend</li>
+												<li>Understands the idea of “mine” and “his” or “hers”</li>
+												<li>Shows a wide range of emotions</li>
+												<li>Separates easily from mom and dad</li>
+												<li>May get upset with major changes in routine</li>
+												<li>Dresses and undresses self</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Follows instructions with 2 or 3 steps</li>
+												<li>Can name most familiar things</li>
+												<li>Understands words like “in,” “oh” and “under”</li>
+												<li>Says first name, age, and sex</li>
+												<li>Names a friend</li>
+												<li>Says words like “I,” “me,” “we,” and “you” and some plurals (cars,
+													dogs, cats)</li>
+												<li>Talks well enough for strangers to understand most of the time</li>
+												<li>Carries on a conversation using 2 to 3 sentences</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Can work toys with buttons, levers, and moving parts</li>
+												<li>Plays make-believe with dolls, animals, and people</li>
+												<li>Does puzzles with 3 or 4 pieces</li>
+												<li>Understands what “two” means</li>
+												<li>Copies a circle with a pencil or crayon</li>
+												<li>Turns book pages one at a time</li>
+												<li>Builds towers of more than 6 blocks ❑ Screws and unscrews jar lids
+													or turns the door handle</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Climbs well</li>
+												<li>Runs easily</li>
+												<li>Pedals a tricycle (3-wheel bike)</li>
+												<li>Walks up and down stairs, one foot on each step</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>4
+												Years</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h3><img class=" wp-image-5272 alignright"
+													src="https://kqx.uro.mybluehost.me/myspeechtactics/wp-content/uploads/2020/05/Child.png"
+													alt="" width="406" height="421"
+													srcset="https://kqx.uro.mybluehost.me/myspeechtactics/wp-content/uploads/2020/05/Child.png 1966w, https://kqx.uro.mybluehost.me/myspeechtactics/wp-content/uploads/2020/05/Child-768x794.png 768w, https://kqx.uro.mybluehost.me/myspeechtactics/wp-content/uploads/2020/05/Child-100x103.png 100w, https://kqx.uro.mybluehost.me/myspeechtactics/wp-content/uploads/2020/05/Child-230x237.png 230w"
+													sizes="(max-width: 406px) 100vw, 406px"></h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Enjoys doing new things</li>
+												<li>Plays “Mom” and “Dad”</li>
+												<li>Is more and more creative with make-believe play</li>
+												<li>Would rather play with other children than by himself</li>
+												<li>Cooperates with other children</li>
+												<li>Often can’t tell what’s real and what’s make-believe</li>
+												<li>Talks about what she likes and what she is interested in</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Knows some basic rules of grammar, such as correctly using “he” and
+													“she”</li>
+												<li>Sings a song or says a poem from memory such as the “Itsy Bitsy
+													Spider” or the “Wheels on the Bus”</li>
+												<li>Tells stories</li>
+												<li>Can say first and last name</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Names some colors and some numbers</li>
+												<li>Understands the idea of counting</li>
+												<li>Starts to understand time</li>
+												<li>Remembers parts of a story</li>
+												<li>Understands the idea of “same” and “different”</li>
+												<li>Draws a person with 2 to 4 body parts</li>
+												<li>Uses scissors</li>
+												<li>Starts to copy some capital letters</li>
+												<li>Plays board or card games</li>
+												<li>Tells you what he thinks is going to happen next in a book</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Hops and stands on one foot up to 2 seconds</li>
+												<li>Catches a bounced ball most of the time</li>
+												<li>Pours and cuts with supervision, and mashes own food</li>
+											</ul>
+										</div>
+									</div>
+									<div class="accordion_section">
+										<div class="accordion_title"><i
+												class="accordion_icon custom fa fa-check-square-o"></i><span>5
+												years</span></div>
+										<div class="accordion_content" style="display:none;">
+											<h3>What Most Babies Do by this Age:</h3>
+											<h5><strong>Social/Emotional</strong></h5>
+											<ul>
+												<li>Wants to please friends</li>
+												<li>Wants to be like friends</li>
+												<li>More likely to agree with rules</li>
+												<li>Likes to sing, dance, and act Is aware of gender</li>
+												<li>Can tell what’s real and what’s make-believe</li>
+												<li>Shows more independence (for example, may visit a next-door neighbor
+													by himself (adult supervision is still needed))</li>
+												<li>Is sometimes demanding and sometimes very cooperative</li>
+											</ul>
+											<h5><strong>Language/Communication</strong></h5>
+											<ul>
+												<li>Speaks very clearly</li>
+												<li>Tells a simple story using full sentences</li>
+												<li>Uses future tense; for example, “Grandma will be here.”</li>
+												<li>Says name and address</li>
+											</ul>
+											<h5><strong>Cognitive (learning, thinking, problem-solving)</strong></h5>
+											<ul>
+												<li>Counts 10 or more things</li>
+												<li>Can draw a person with at least 6 body parts</li>
+												<li>Can print some letters or numbers</li>
+												<li>Copies a triangle and other geometric shapes</li>
+												<li>Knows about things used every day, like money and food</li>
+											</ul>
+											<h5><strong>Movement/Physical Development</strong></h5>
+											<ul>
+												<li>Stands on one foot for 10 seconds or longer</li>
+												<li>Hops; may be able to skip</li>
+												<li>Can do a somersault</li>
+												<li>Uses a fork and spoon and sometimes a table knife</li>
+												<li>Can use the toilet on her own</li>
+												<li>Swings and climbs</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </main>
+                <!-- pattern container / -->
+                <div class='right-pattern pattern pattern-2'></div>
+                <!-- footer image container / -->
+                <div class="footer_image" style="height:81px;">
+                    <style type="text/css">
+                        .page_content>.footer_image {
+                            background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+                        }
+
+                        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+                        only screen and (min--moz-device-pixel-ratio: 1.5),
+                        only screen and (-o-device-pixel-ratio: 3/2),
+                        only screen and (min-device-pixel-ratio: 1.5) {
+                            .page_content>.footer_image {
+                                background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+                                background-size: 734px;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+            <!-- svg filter -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                    </filter>
+                </defs>
+            </svg>
+            <!-- / svg filter -->
+        </div>
+        <!-- #main -->
+        <!-- footer -->
+        <div class='footer_wrapper_copyright' style="background-image: url(img/dots-pattern.png);">
+            <div class='half_sin_wrapper'><canvas class='half_sin' data-bg-color='15, 96, 96'
+                    data-line-color='15, 96, 96'></canvas></div>
+            <footer class='page_footer'>
+                <div class='container'>
+                    <div class='footer_container'>
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Our Locations</div>
+                            <div class="post_date"><strong style="color: #FECC1B"> Charlotte Office: </strong></div>8848
+                            Red Oak Blvd, STE AA,
+                            Charlotte, NC
+                            28217 <br /> <br /> <strong style="color: #FECC1B">Monroe Office: </strong><br />1902 W.
+                            Roosevelt Blvd. Suite C,
+                            Monroe, NC
+                            28110
+                        </div>
+
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Contact Us</div>
+
+                            <p class="post_date"> Email: info@myspeechtactics.com
+                                <br />
+                                Phone: 980-422-5887
+                                <br />
+                                Fax: 980-225-0025
+                            </p>
+                        </div>
+						<div class="textwidget cws-widget">
+                            <div class="widget-title">Site Index</div>
+
+                            <div class="post_date"><a style="color: #FECC1B" href="our-history">About Us</a></div>
+                        
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="child-services.html">Child Services</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="adult-services.html">Adult Services</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                        href="careers.html">Careers</a></div>
+                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+                                    href="contact-us.html">Contact Us</a></div>
+                        </div>
+                        <!-- <div class="textwidget cws-widget">
+							<div class="widget-title">Certifications</div>
+							<div class="textwidget custom-html-widget"><img src="img/st/Certifications-1.png"
+									width="200px" alt="" /></div>
+						</div> -->
+                        <div class="textwidget cws-widget">
+                            <div class="widget-title">Join the ST Community</div>
+
+                            <div class='cws_social_links'>
+
+                                <a href="http://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter">
+                                    <img src="img/social/twitter.png">
+                                </a>
+
+                                <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook">
+                                    <img src="img/social/facebook.png"></a>
+                                </a>
+
+                                <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Linkedin">
+                                    <img src="img/social/linkedin.png"></a>
+
+                                </a>
+
+                                <a href="https://instagram.com/speech_tactics_nc" class="cws_social_link" title="Instagram">
+                                    <img src="img/social/instagram.png"></a>
+
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <div class='copyrights_area'>
+                <div class='half_sin_wrapper'><canvas class='footer_half_sin' data-bg-color='8, 56, 56'
+                        data-line-color='8,56,56'></canvas></div>
+                <div class='container a-center'>
+                    <div class='copyrights_container logo-center'>
+                        <div class='copyrights' style="color: white">Copyright ©2020 Speech Tactics</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #page -->
+    <div class='scroll_top animated'></div>
+    <div id="lang_sel_footer">
+        <ul>
+            <li>
+                <a href="features-content-elements.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+            </li>
+            <li>
+                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .footer_wrapper_copyright {
+            background-color: #18a0a0;
+        }
+
+        .grid_row:not(:first-child) {
+            padding-top: 0px;
+        }
+
+        .cws_callout,
+        .header_logo_part.with_border .logo>img {
+            height: 90px;
+            width: 190px;
+        }
+
+        .header_logo_part.with_border .logo {
+            background-color: white !important;
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            display: block;
+            z-index: 1000;
+            border-radius: 50%
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.rs-touchhover {
+            background: #000000
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows:before {
+            font-family: 'revicons';
+            font-size: 18px;
+            color: #ffffff;
+            display: block;
+            line-height: 40px;
+            text-align: center
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.tp-leftarrow:before {
+            content: '\e82c';
+            margin-left: -2px
+        }
+
+        #rev_slider_13_1_wrapper .hephaistos.tparrows.tp-rightarrow:before {
+            content: '\e82d';
+            margin-right: -2px
+        }
+    </style>
+        <script>
+            window.onload = function loaderPreloader() {
+                document.getElementById("bbpreloading").className = "bbpreloading hidepreloader";
+            };
+        </script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script type='text/javascript' src='js/retina_1.3.0.js'></script>
+ <script type='text/javascript' src='js/modernizr.js'></script>
+ <script type='text/javascript' src='js/owl.carousel.js'></script>
+ <script type='text/javascript' src='js/TweenMax.min.js'></script>
+ <script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+ <script type='text/javascript' src='js/jquery.fancybox.js'></script>
+ <script type='text/javascript' src='js/select2.min.js'></script>
+ <script type='text/javascript' src='js/wow.min.js'></script>
+ <script type='text/javascript' src='js/jquery.validate.min.js'></script>
+ <script type='text/javascript' src="js/jquery.form.min.js"></script>
+ <script type='text/javascript' src='js/scripts.js'></script>
+ <script type='text/javascript' src="js/jquery.tweet.js"></script>
+
+ <script type="text/javascript">
+	 function triggerHtmlEvent(element, eventName) {
+		 var event;
+		 if (document.createEvent) {
+			 event = document.createEvent('HTMLEvents');
+			 event.initEvent(eventName, true, true);
+			 element.dispatchEvent(event);
+		 } else {
+			 event = document.createEventObject();
+			 event.eventType = eventName;
+			 element.fireEvent('on' + event.eventType, event);
+		 }
+	 }
+
+	 $('.translation-links a').click(function (e) {
+		 e.preventDefault();
+		 var lang = $(this).data('lang');
+		 $('#google_translate_element select option').each(function () {
+			 if ($(this).text().indexOf(lang) > -1) {
+				 $(this).parent().val($(this).val());
+				 var container = document.getElementById('google_translate_element');
+				 var select = container.getElementsByTagName('select')[0];
+				 triggerHtmlEvent(select, 'change');
+			 }
+		 });
+	 });
+ </script>
+</body>
+
+</html>
