@@ -2,23 +2,23 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
-    <title>Speech Tactics</title>
-    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/select2.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/shop.css' type='text/css' media='all' />
-    <script type='text/javascript' src='js/jquery.js'></script>
-    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
-    <link rel="icon" href="img/cropped-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="img/cropped-favicon-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon-precomposed" href="img/cropped-favicon-180x180.png">
-    <meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
-    	<!-- Loader Preloader -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/cropped-favicon-192x192.png" />
+	<title>Speech Tactics</title>
+	<link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/jquery.fancybox.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/select2.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/shop.css' type='text/css' media='all' />
+	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+	<link rel="icon" href="img/cropped-favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" href="img/cropped-favicon-192x192.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="img/cropped-favicon-180x180.png">
+	<meta name="msapplication-TileImage" content="img/cropped-favicon-270x270.png">
+	<!-- Loader Preloader -->
 	<div id="bbpreloading" class="bbpreloading">
 		<div class="spinner"></div>
 		<div class="random-quote"></div>
@@ -30,8 +30,8 @@
 	</script>
 	<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
 		type="text/javascript"></script>
-<style>
-          	.skiptranslate.goog-te-gadget>span {
+	<style>
+		.skiptranslate.goog-te-gadget>span {
 			display: none;
 		}
 
@@ -105,352 +105,376 @@
 			visibility: visible;
 			top: 95%;
 		}
-</style>
+	</style>
 </head>
 
 <body class="page wide wave-style">
-    <div class="page">
-        <!-- top panel -->
-        <div class='site_top_panel wave slider active'>
-            <!-- canvas -->
-            <div class='top_half_sin_wrapper'>
-                <canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
-            </div>
-            <!-- / canvas -->
-            <div class='container'>
-                <div class="language_drop">
-                    <p>select language </p>
-                    <ul class="translation-links">
-                        <li><a href="#" class="spanish" data-lang="Spanish">
-                                <img src="img/st/18169.jpg" alt="">
-                                Spanish
-                            </a></li>
-                        <li><a href="#" class="german" data-lang="English">
-                                <img src="img/st/18165.jpg" alt="">
-                                English
-                            </a></li>
-                    </ul>
-                </div>
-                <!-- Code provided by Google -->
-                <div id="google_translate_element"></div>
-                <div class='row_text_search'>
-                    <div id='top_panel_text'><a href="tel:980-422-5887"><i class="fa fa-phone-square"></i>
-                        980-422-5887 </a>
-                        <a href="mailto:info@myspeechtactics.com"> <i class="fa fa-envelope-o"></i>info@myspeechtactics.com</a>
-                    </div>
-                  
-                </div>
-                <div id='top_panel_links'>
-                    <div id="top_social_links_wrapper" class="expanded">
-                        <div class="cws_social_links">
+	<div class="page">
+		<!-- top panel -->
+		<div class='site_top_panel wave slider active'>
+			<!-- canvas -->
+			<div class='top_half_sin_wrapper'>
+				<canvas class='top_half_sin' data-bg-color='#ffffff' data-line-color='#ffffff'></canvas>
+			</div>
+			<!-- / canvas -->
+			<div class='container'>
+				<div class="language_drop">
+					<p>select language </p>
+					<ul class="translation-links">
+						<li><a href="#" class="spanish" data-lang="Spanish">
+								<img src="img/st/18169.jpg" alt="">
+								Spanish
+							</a></li>
+						<li><a href="#" class="german" data-lang="English">
+								<img src="img/st/18165.jpg" alt="">
+								English
+							</a></li>
+					</ul>
+				</div>
+				<!-- Code provided by Google -->
+				<div id="google_translate_element"></div>
+				<div class='row_text_search'>
+					<div id='top_panel_text'><a href="tel:980-422-5887"><i class="fa fa-phone-square"></i>
+							980-422-5887 </a>
+						<a href="mailto:info@myspeechtactics.com"> <i
+								class="fa fa-envelope-o"></i>info@myspeechtactics.com</a>
+					</div>
 
-                            <a href="https://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter"
-                                style="z-index: 1; transform: matrix(1, 0, 0, 1, -38, 0);">
-                                <img src="img/social/twitter.png">
-                            </a>
+				</div>
+				<div id='top_panel_links'>
+					<div id="top_social_links_wrapper" class="expanded">
+						<div class="cws_social_links">
 
-                            <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook"
-                                style="z-index: 2; transform: matrix(1, 0, 0, 1, -76, 0);">
-                                <img src="img/social/facebook.png"></a>
-                            </a>
+							<a href="https://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter"
+								style="z-index: 1; transform: matrix(1, 0, 0, 1, -38, 0);">
+								<img src="img/social/twitter.png">
+							</a>
 
-                            <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Dribbble"
-                                style="z-index: 3; transform: matrix(1, 0, 0, 1, -114, 0);">
-                                <img src="img/social/linkedin.png"></a>
+							<a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook"
+								style="z-index: 2; transform: matrix(1, 0, 0, 1, -76, 0);">
+								<img src="img/social/facebook.png"></a>
+							</a>
 
-                            </a>
+							<a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link"
+								title="Dribbble" style="z-index: 3; transform: matrix(1, 0, 0, 1, -114, 0);">
+								<img src="img/social/linkedin.png"></a>
+
+							</a>
 
 
-                            <a href="https://www.instagram.com/speech_tactics_nc/" class="cws_social_link" title="Instagram">
-                                <img src="img/social/instagram.png"></a>
+							<a href="https://www.instagram.com/speech_tactics_nc/" class="cws_social_link"
+								title="Instagram">
+								<img src="img/social/instagram.png"></a>
 
-                            </a>
-                        </div>
-                    </div>
+							</a>
+						</div>
+					</div>
 
-                </div>
-            </div>
-        </div>
-        <!-- / top panel -->
-        <!-- header container -->
-        <div class='header_cont'>
-            <div class='header_mask'>
-                <div class='header_pattern'></div>
-                <div class='header_img'></div>
-            </div>
-            <header class='site_header logo-in-menu' data-menu-after="3">
-                <div class="header_box">
-                    <div class="container">
-                        <!-- logo -->
-                        <div class="header_logo_part with_border" role="banner">
-                            <a class="logo" href="index.html"><img src='img/st/logo.png' data-at2x='img/st/logo.png' alt /></a>
-                        </div>
-                        <!-- / logo -->
-                        <!-- menu -->
-                        <div class="header_nav_part">
-                            <nav class="main-nav-container a-right">
-                                <div class="mobile_menu_header">
-                                    <i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
-                                </div>
-                                <ul id="menu-main-menu" class="main-menu">
-                                    <!-- menu item -->
-                                    <li class="menu-item bees-start">
-                                        <a href="index.html">
-                                            <div><span></span>
-                                                <div class="line-one"></div>
-                                                <div class="line-two"></div>
-                                            </div>Home
-                                            <div class="canvas_wrapper">
-                                                <canvas class="menu_dashed"></canvas>
-                                            </div>
-                                        </a>
-                                
-                                    </li>
-                                    <!-- / menu item -->
-                                    <!-- menu item -->
-                                    <li class="menu-item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children"><a href="#">About Us<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
-                                        <span class='button_open'></span>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                            </li>
-                                            <li class="menu-item"><a href="meet-the-ceo.html">Meet the CEO</a></li>
-                                            <li class="menu-item current-menu-item page_item current_page_item"><a href="meet-the-team.html">Meet the Team</a></li>
-                                            <li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
-                                        
-                                        </ul>
-                                    </li>
-                                    <!-- / menu item -->
-                                    <!-- menu item -->
-                                    <li class="menu-item menu-item-has-children"><a href="#">Services<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
-                                        <span class='button_open'></span>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                            </li>
-                                            <li class="menu-item"><a href="child-services.html">Child Services</a></li>
-                                            <li class="menu-item"><a href="adult-services.html">Adult Services</a></li>
+				</div>
+			</div>
+		</div>
+		<!-- / top panel -->
+		<!-- header container -->
+		<div class='header_cont'>
+			<div class='header_mask'>
+				<div class='header_pattern'></div>
+				<div class='header_img'></div>
+			</div>
+			<header class='site_header logo-in-menu' data-menu-after="3">
+				<div class="header_box">
+					<div class="container">
+						<!-- logo -->
+						<div class="header_logo_part with_border" role="banner">
+							<a class="logo" href="index.html"><img src='img/st/logo.png' data-at2x='img/st/logo.png'
+									alt /></a>
+						</div>
+						<!-- / logo -->
+						<!-- menu -->
+						<div class="header_nav_part">
+							<nav class="main-nav-container a-right">
+								<div class="mobile_menu_header">
+									<i class="mobile_menu_switcher"><span></span><span></span><span></span></i>
+								</div>
+								<ul id="menu-main-menu" class="main-menu">
+									<!-- menu item -->
+									<li class="menu-item bees-start">
+										<a href="index.html">
+											<div><span></span>
+												<div class="line-one"></div>
+												<div class="line-two"></div>
+											</div>Home
+											<div class="canvas_wrapper">
+												<canvas class="menu_dashed"></canvas>
+											</div>
+										</a>
 
-                                            <li class="menu-item menu-item-has-children"><a href="#">Programs</a>
-                                                <span class='button_open'></span>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                                    </li>
-                                                    <li class="menu-item"><a href="student-outreach.html">Student Outreach</a></li>
-                                                    <li class="menu-item"><a href="act-now.html">ACT Now</a></li>
-                                                </ul>
-                                            </li>              
-                                        </ul>
-                                    </li>
-                                    <!-- / menu item -->
-                                    <!-- menu item -->
-                                    <li class="menu-item menu-item-has-children right"><a href="#">Get Started<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
-                                        <span class='button_open'></span>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                            </li>
-                                            <li class="menu-item"><a href="pay-invoice.html">Make Payment</a></li>
+									</li>
+									<!-- / menu item -->
+									<!-- menu item -->
+									<li
+										class="menu-item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
+										<a href="#">About Us<div class="canvas_wrapper"><canvas
+													class="menu_dashed"></canvas></div></a>
+										<span class='button_open'></span>
+										<ul class="sub-menu">
+											<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+											</li>
+											<li class="menu-item"><a href="meet-the-ceo.html">Meet the CEO</a></li>
+											<li class="menu-item current-menu-item page_item current_page_item"><a
+													href="meet-the-team.html">Meet the Team</a></li>
+											<li class="menu-item"><a href="testimonials.html">Testimonials</a></li>
+											<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+										</ul>
+									</li>
+									<!-- / menu item -->
+									<!-- menu item -->
+									<li class="menu-item menu-item-has-children"><a href="#">Services<div
+												class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+										<span class='button_open'></span>
+										<ul class="sub-menu">
+											<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+											</li>
+											<li class="menu-item"><a href="child-services.html">Child Services</a></li>
+											<li class="menu-item"><a href="adult-services.html">Adult Services</a></li>
 
-                                            <li class="menu-item menu-item-has-children"><a href="#">Forms</a>
-                                                <span class='button_open'></span>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                                    </li>
-                                                    <li class="menu-item"><a href="#">Patient Intake Form</a></li>
-                                                    <li class="menu-item"><a href="#">HIPAA Notice</a></li>
-                                                </ul>
-                                            </li>                                            
-                                            <li class="menu-item menu-item-has-children"><a href="#">Parent Resources</a>
-                                                <span class='button_open'></span>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
-                                                    </li>
-                                                    <li class="menu-item"><a href="insurance.html">Insurance</a></li>
-                                                    <li class="menu-item"><a href="milestone-checker.html">Milestones Checker</a></li>
-                                                    <li class="menu-item"><a href="additional-resources.html">Additional Resources</a></li>
-                                                    <li class="menu-item"><a href="faqs.html">FAQs</a></li>
+											<li class="menu-item menu-item-has-children"><a href="#">Programs</a>
+												<span class='button_open'></span>
+												<ul class="sub-menu">
+													<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+													</li>
+													<li class="menu-item"><a href="student-outreach.html">Student
+															Outreach</a></li>
+													<li class="menu-item"><a href="act-now.html">ACT Now</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- / menu item -->
+									<!-- menu item -->
+									<li class="menu-item menu-item-has-children right"><a href="#">Get Started<div
+												class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
+										<span class='button_open'></span>
+										<ul class="sub-menu">
+											<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+											</li>
+											<li class="menu-item"><a href="pay-invoice.html">Make Payment</a></li>
 
-                                                </ul>
-                                            </li>             
-                                        </ul>
-                                    </li>
-                                    <!-- / menu item -->
-                                    <!-- menu item -->
-                                    <li class="menu-item"><a href="calendar.html">Calendar<div class="canvas_wrapper"><canvas class="menu_dashed"></canvas></div></a>
-                                      
-                                    </li>
-                                    <!-- / menu item -->
-                                    <!-- menu item -->
-                                    <li class="menu-item right">
-                                        <a href="contact-us.html">
-                                            <div><span></span>
-                                                <div class="line-one"></div>
-                                                <div class="line-two"></div>
-                                            </div>Contact
-                                            <div class="canvas_wrapper">
-                                                <canvas class="menu_dashed"></canvas>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- / menu item -->
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- #masthead -->
-        </div>
-        <!-- breadcrumbs -->
-        <section class='page_title wave'>
-            <div class='container'>
-                <div class='title'>
-                    <h1>Meet the Team</h1></div>
-                <nav class="bread-crumbs"><a href="index.html" >About Us</a><i class="delimiter fa fa-chevron-right"></i><span class="current">Meet the Team</span></nav>
-                <!-- .breadcrumbs -->
-            </div>
-            <canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
-        </section>
-        <!-- / breadcrumbs -->
-        <!-- main container -->
-        <div id="main" class="site-main">
-            <div class="page_content">
-                <!-- pattern container / -->
-                <div class='left-pattern pattern pattern-2'></div>
-                <!-- main content -->
-                <div id="main" class="site-main">
-                    <div class="page_content">
-                    
-                        <!-- main content -->
-                        <main>
-                            <!-- staff filtered -->
-                            <div class='grid_row clearfix'>
-                                <section class='cws_ourteam'>
-                                    <!-- filter -->
-                                    <div class='massonry cws_portfolio_header'>
-                                       
-                                    </div> 
-                                    <!-- / filter -->
-                                    <!-- filter items -->
-                                    <div class='cws_wrapper'>
-                                        <div class='cws_ourteam_items grid grid-4 isotope'>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'>
-                                                            <img src='img/team/team_new/JPEG/Speechtact-191.jpg' data-no-retina
-                                                                alt />
-            
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-            
-            
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Sharon C. Jordan</h3>
-                                                        <div class='positions'><a href='meet-the-ceo.html'>President/CEO</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-190.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-190.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks2'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Wanda Wims</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-190.jpg'>Clinical
-                                                                Director- Charlotte/Monroe Clinics</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-187.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-187.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks3'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Jairo Adame</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-187.jpg'>Sr.
-                                                                Office Admin/ Scheduling & Client Resources</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-001.jpg'
-                                                                data-no-retina alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks4'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Cynthia Ferrera</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-001.jpg'>Administrative
-                                                                Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-189.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-189.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks5'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Yvonne Torres</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-189.jpg'>Administrative
-                                                                Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <!-- <article class='item'>
+											<li class="menu-item menu-item-has-children"><a href="#">Forms</a>
+												<span class='button_open'></span>
+												<ul class="sub-menu">
+													<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+													</li>
+													<li class="menu-item"><a href="#">Patient Intake Form</a></li>
+													<li class="menu-item"><a href="#">HIPAA Notice</a></li>
+												</ul>
+											</li>
+											<li class="menu-item menu-item-has-children"><a href="#">Parent
+													Resources</a>
+												<span class='button_open'></span>
+												<ul class="sub-menu">
+													<li class="menu-item back"><a href="#"><em>←</em>&nbsp;BACK</a>
+													</li>
+													<li class="menu-item"><a href="insurance.html">Insurance</a></li>
+													<li class="menu-item"><a href="milestone-checker.html">Milestones
+															Checker</a></li>
+													<li class="menu-item"><a href="additional-resources.html">Additional
+															Resources</a></li>
+													<li class="menu-item"><a href="faqs.html">FAQs</a></li>
+
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- / menu item -->
+									<!-- menu item -->
+									<li class="menu-item"><a href="calendar.html">Calendar<div class="canvas_wrapper">
+												<canvas class="menu_dashed"></canvas></div></a>
+
+									</li>
+									<!-- / menu item -->
+									<!-- menu item -->
+									<li class="menu-item right">
+										<a href="contact-us.html">
+											<div><span></span>
+												<div class="line-one"></div>
+												<div class="line-two"></div>
+											</div>Contact
+											<div class="canvas_wrapper">
+												<canvas class="menu_dashed"></canvas>
+											</div>
+										</a>
+									</li>
+									<!-- / menu item -->
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- #masthead -->
+		</div>
+		<!-- breadcrumbs -->
+		<section class='page_title wave'>
+			<div class='container'>
+				<div class='title'>
+					<h1>Meet the Team</h1>
+				</div>
+				<nav class="bread-crumbs"><a href="index.html">About Us</a><i
+						class="delimiter fa fa-chevron-right"></i><span class="current">Meet the Team</span></nav>
+				<!-- .breadcrumbs -->
+			</div>
+			<canvas class='breadcrumbs' data-bg-color='#f8f2dc' data-line-color='#f9e8b2'></canvas>
+		</section>
+		<!-- / breadcrumbs -->
+		<!-- main container -->
+		<div id="main" class="site-main">
+			<div class="page_content">
+				<!-- pattern container / -->
+				<div class='left-pattern pattern pattern-2'></div>
+				<!-- main content -->
+				<div id="main" class="site-main">
+					<div class="page_content">
+
+						<!-- main content -->
+						<main>
+							<!-- staff filtered -->
+							<div class='grid_row clearfix'>
+								<section class='cws_ourteam'>
+									<!-- filter -->
+									<div class='massonry cws_portfolio_header'>
+
+									</div>
+									<!-- / filter -->
+									<!-- filter items -->
+									<div class='cws_wrapper'>
+										<div class='cws_ourteam_items grid grid-4 isotope'>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'>
+															<img src='img/team/team_new/JPEG/Speechtact-191.jpg'
+																data-no-retina alt />
+
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+
+
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Sharon C. Jordan</h3>
+														<div class='positions'><a
+																href='meet-the-ceo.html'>President/CEO</a>
+														</div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-190.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-190.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks2'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Wanda Wims</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-190.jpg'>Clinical
+																Director- Charlotte/Monroe Clinics</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-187.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-187.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks3'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Jairo Adame</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-187.jpg'>Sr.
+																Office Admin/ Scheduling & Client Resources</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-001.jpg'
+																data-no-retina alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks4'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Cynthia Ferrera</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-001.jpg'>Administrative
+																Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-189.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-189.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks5'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Yvonne Torres</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-189.jpg'>Administrative
+																Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<!-- <article class='item'>
                                                 <div class='ourteam_item_wrapper'>
                                                     <div class='media_part'>
                                                         <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-037.jpg'
@@ -473,7 +497,7 @@
                                                     </div>
                                                 </div>
                                             </article> -->
-                                            <!-- <article class='item'>
+											<!-- <article class='item'>
                                                 <div class='ourteam_item_wrapper'>
                                                     <div class='media_part'>
                                                         <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-037.jpg'
@@ -496,168 +520,205 @@
                                                     </div>
                                                 </div>
                                             </article> -->
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-022.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-022.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks8'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Amanda Pericles</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-022.jpg'>Speech-Language
-                                                                Pathologist-CFY</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/4.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/4.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks9'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Rosemary Agbeh</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/4.jpg'>Speech-Language
-                                                                Pathologist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-023.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-023.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks10'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Jasmine Orr</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-023.jpg'>Speech-Language
-                                                                Pathologist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-099.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-099.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks11'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Milca Bellegarde</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-099.jpg'>Speech-Language
-                                                                Pathologist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-117.jpg'
-                                                                data-no-retina alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks12'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Giselle Zayas</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-117.jpg'>Speech-Language
-                                                                Pathology Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-118.jpg'
-                                                                data-no-retina alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks13'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Roxy Laguerra</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-118.jpg'>Speech-Language
-                                                                Pathology Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-024.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-024.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks14'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Jada Leslie</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-024.jpg'>Occupational
-                                                                Therapist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <!-- <article class='item'>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-022.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-022.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks8'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Amanda Pericles</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-022.jpg'>Speech-Language
+																Pathologist-CFY</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img src='img/team/team_new/JPEG/4.jpg'
+																data-at2x='img/team/team_new/JPEG/4.jpg' alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks9'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Rosemary Agbeh</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/4.jpg'>Speech-Language
+																Pathologist</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-023.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-023.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks10'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Jasmine Orr</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-023.jpg'>Speech-Language
+																Pathologist</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-099.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-099.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks11'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Milca Bellegarde</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-099.jpg'>Speech-Language
+																Pathologist</a></div>
+													</div>
+												</div>
+											</article>
+
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-116.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-116.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class=''>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Gerardo Ocasio</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-116.jpg'>Speech-Language
+																Pathologist Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-117.jpg'
+																data-no-retina alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks12'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Giselle Zayas</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-117.jpg'>Speech-Language
+																Pathology Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-118.jpg'
+																data-no-retina alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks13'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Roxy Laguerra</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-118.jpg'>Speech-Language
+																Pathology Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-024.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-024.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks14'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Jada Leslie</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-024.jpg'>Occupational
+																Therapist</a></div>
+													</div>
+												</div>
+											</article>
+											<!-- <article class='item'>
                                                 <div class='ourteam_item_wrapper'>
                                                     <div class='media_part'>
                                                         <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-037.jpg'
@@ -680,292 +741,343 @@
                                                     </div>
                                                 </div>
                                             </article> -->
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/3.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/3.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks16'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Iliana Abruet</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/3.jpg'>Occupational
-                                                                Therapist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-037.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-037.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks21'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Donna Addams</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-037.jpg'>Occupational
-                                                                Therapist</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-186.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-186.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks17'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Monica Rodriguez</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-186.jpg'>Occupational
-                                                                Therapy Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/Speechtact-115.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/Speechtact-115.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks18'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Antoine Hodges</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/Speechtact-115.jpg'>Occupational
-                                                                Therapy Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/2.jpg'
-                                                                data-at2x='img/team/team_new/JPEG/2.jpg' alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks19'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Matthew Barry</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/2.jpg'>Occupational
-                                                                Therapy Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class='item'>
-                                                <div class='ourteam_item_wrapper'>
-                                                    <div class='media_part'>
-                                                        <div class='pic'><img src='img/team/team_new/JPEG/1.jpg'
-                                                                data-no-retina alt />
-                                                            <div class='hover-effect'></div>
-                                                            <div class='links_popup'>
-                                                                <div class='link_cont'>
-                                                                    <a href='javascript:void(0)' class='popupLinks20'>
-                                                                        <i class='fa fa-camera'></i>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class='title_wrap'>
-                                                        <h3 class='title'>Angie Lee</h3>
-                                                        <div class='positions'><a
-                                                                href='img/team/team_new/JPEG/1.jpg'>Occupational
-                                                                Therapy Assistant</a></div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <!-- / filter item -->
-                                </section>
-                            </div>
-                            <!-- / staff filtered -->
-                          
-                    
-                        </main>
-                        <!-- / main content -->
-                        <!-- pattern container / -->
-                    
-                    </div>
-                    <!-- svg filter -->
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
-                        <defs>
-                            <filter id="goo">
-                                <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-                                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                                <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                            </filter>
-                        </defs>
-                    </svg>
-                    <!-- / svg filter -->
-                </div>
-                <!-- pattern container / -->
-                <div class='right-pattern pattern pattern-2'></div>
-                <!-- footer image container / -->
-                <div class="footer_image" style="height:81px;">
-                    <style type="text/css">
-                        .page_content>.footer_image {
-                            background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
-                        }
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img src='img/team/team_new/JPEG/3.jpg'
+																data-at2x='img/team/team_new/JPEG/3.jpg' alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks16'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Iliana Abruet</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/3.jpg'>Occupational
+																Therapist</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-037.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-037.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks21'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Donna Addams</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-037.jpg'>Occupational
+																Therapist</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-037.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-037.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks21'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Donna Addams</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-037.jpg'>Occupational
+																Therapist</a></div>
+													</div>
+												</div>
+											</article>
 
-                        @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-                        only screen and (min--moz-device-pixel-ratio: 1.5),
-                        only screen and (-o-device-pixel-ratio: 3/2),
-                        only screen and (min-device-pixel-ratio: 1.5) {
-                            .page_content>.footer_image {
-                                background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
-                                background-size: 734px;
-                            }
-                        }
-                    </style>
-                </div>
-            </div>
-            <!-- svg filter -->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
-                <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
-                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
-                    </filter>
-                </defs>
-            </svg>
-            <!-- / svg filter -->
-        </div>
-        <!-- #main -->
-        <!-- footer -->
-        <div class='footer_wrapper_copyright' style="background-image: url(img/dots-pattern.png);">
-            <div class='half_sin_wrapper'><canvas class='half_sin' data-bg-color='15, 96, 96'
-                    data-line-color='15, 96, 96'></canvas></div>
-            <footer class='page_footer'>
-                <div class='container'>
-                    <div class='footer_container'>
-                        <div class="textwidget cws-widget">
-                            <div class="widget-title">Our Locations</div>
-                            <div class="post_date"><strong style="color: #FECC1B"> Charlotte Office: </strong></div>8848
-                            Red Oak Blvd, STE AA,
-                            Charlotte, NC
-                            28217 <br /> <br /> <strong style="color: #FECC1B">Monroe Office: </strong><br />1902 W.
-                            Roosevelt Blvd. Suite C,
-                            Monroe, NC
-                            28110
-                        </div>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-038.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-038.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class=''>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Deirdre O’Mally</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-038.jpg'>Occupational
+																Therapist</a></div>
+													</div>
+												</div>
+											</article>
 
-                        <div class="textwidget cws-widget">
-                            <div class="widget-title">Contact Us</div>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-186.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-186.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks17'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Monica Rodriguez</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-186.jpg'>Occupational
+																Therapy Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img
+																src='img/team/team_new/JPEG/Speechtact-115.jpg'
+																data-at2x='img/team/team_new/JPEG/Speechtact-115.jpg'
+																alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks18'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Antoine Hodges</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/Speechtact-115.jpg'>Occupational
+																Therapy Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img src='img/team/team_new/JPEG/2.jpg'
+																data-at2x='img/team/team_new/JPEG/2.jpg' alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks19'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Matthew Barry</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/2.jpg'>Occupational
+																Therapy Assistant</a></div>
+													</div>
+												</div>
+											</article>
+											<article class='item'>
+												<div class='ourteam_item_wrapper'>
+													<div class='media_part'>
+														<div class='pic'><img src='img/team/team_new/JPEG/1.jpg'
+																data-no-retina alt />
+															<div class='hover-effect'></div>
+															<div class='links_popup'>
+																<div class='link_cont'>
+																	<a href='javascript:void(0)' class='popupLinks20'>
+																		<i class='fa fa-camera'></i>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class='title_wrap'>
+														<h3 class='title'>Angie Lee</h3>
+														<div class='positions'><a
+																href='img/team/team_new/JPEG/1.jpg'>Occupational
+																Therapy Assistant</a></div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+									<!-- / filter item -->
+								</section>
+							</div>
+							<!-- / staff filtered -->
 
-                            <p class="post_date"> Email: info@myspeechtactics.com
-                                <br />
-                                Phone: 980-422-5887
-                                <br />
-                                Fax: 980-225-0025
-                            </p>
-                        </div>
-                        <div class="textwidget cws-widget">
-                            <div class="widget-title">Site Index</div>
 
-                            <div class="post_date"><a style="color: #FECC1B" href="our-history">About Us</a></div>
-                        
-                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
-                                    href="child-services.html">Child Services</a></div>
-                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
-                                    href="adult-services.html">Adult Services</a></div>
-                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
-                                        href="careers.html">Careers</a></div>
-                            <div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
-                                    href="contact-us.html">Contact Us</a></div>
-                        </div>
-                        <!-- <div class="textwidget cws-widget">
+						</main>
+						<!-- / main content -->
+						<!-- pattern container / -->
+
+					</div>
+					<!-- svg filter -->
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" style='display:none;'>
+						<defs>
+							<filter id="goo">
+								<feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+								<feColorMatrix in="blur" type="matrix"
+									values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+								<feComposite in="SourceGraphic" in2="goo" operator="atop" />
+							</filter>
+						</defs>
+					</svg>
+					<!-- / svg filter -->
+				</div>
+				<!-- pattern container / -->
+				<div class='right-pattern pattern pattern-2'></div>
+				<!-- footer image container / -->
+				<div class="footer_image" style="height:81px;">
+					<style type="text/css">
+						.page_content>.footer_image {
+							background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+						}
+
+						@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+						only screen and (min--moz-device-pixel-ratio: 1.5),
+						only screen and (-o-device-pixel-ratio: 3/2),
+						only screen and (min-device-pixel-ratio: 1.5) {
+							.page_content>.footer_image {
+								background-image: url(img/bfi_thumb/grass-1-3fijolmhydc32ey0sls2dm.png);
+								background-size: 734px;
+							}
+						}
+					</style>
+				</div>
+			</div>
+		
+		</div>
+		<!-- #main -->
+		<!-- footer -->
+		<div class='footer_wrapper_copyright' style="background-image: url(img/dots-pattern.png);">
+			<div class='half_sin_wrapper'><canvas class='half_sin' data-bg-color='15, 96, 96'
+					data-line-color='15, 96, 96'></canvas></div>
+			<footer class='page_footer'>
+				<div class='container'>
+					<div class='footer_container'>
+						<div class="textwidget cws-widget">
+							<div class="widget-title">Our Locations</div>
+							<div class="post_date"><strong style="color: #FECC1B"> Charlotte Office: </strong></div>8848
+							Red Oak Blvd, STE AA,
+							Charlotte, NC
+							28217 <br /> <br /> <strong style="color: #FECC1B">Monroe Office: </strong><br />1902 W.
+							Roosevelt Blvd. Suite C,
+							Monroe, NC
+							28110
+						</div>
+
+						<div class="textwidget cws-widget">
+							<div class="widget-title">Contact Us</div>
+
+							<p class="post_date"> Email: info@myspeechtactics.com
+								<br />
+								Phone: 980-422-5887
+								<br />
+								Fax: 980-225-0025
+							</p>
+						</div>
+						<div class="textwidget cws-widget">
+							<div class="widget-title">Site Index</div>
+
+							<div class="post_date"><a style="color: #FECC1B" href="our-history">About Us</a></div>
+
+							<div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+									href="child-services.html">Child Services</a></div>
+							<div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+									href="adult-services.html">Adult Services</a></div>
+							<div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+									href="careers.html">Careers</a></div>
+							<div class="post_date" style="color: #FECC1B"><a style="color: #FECC1B"
+									href="contact-us.html">Contact Us</a></div>
+						</div>
+						<!-- <div class="textwidget cws-widget">
 							<div class="widget-title">Certifications</div>
 							<div class="textwidget custom-html-widget"><img src="img/st/Certifications-1.png"
 									width="200px" alt="" /></div>
 						</div> -->
-                        <div class="textwidget cws-widget">
-                            <div class="widget-title">Join the ST Community</div>
+						<div class="textwidget cws-widget">
+							<div class="widget-title">Join the ST Community</div>
 
-                            <div class='cws_social_links'>
+							<div class='cws_social_links'>
 
-                                <a href="http://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter">
-                                    <img src="img/social/twitter.png">
-                                </a>
+								<a href="http://twitter.com/TacticsSpeech" class="cws_social_link" title="Twitter">
+									<img src="img/social/twitter.png">
+								</a>
 
-                                <a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook">
-                                    <img src="img/social/facebook.png"></a>
-                                </a>
+								<a href="http://facebook.com/speechtactics" class="cws_social_link" title="Facebook">
+									<img src="img/social/facebook.png"></a>
+								</a>
 
-                                <a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link" title="Linkedin">
-                                    <img src="img/social/linkedin.png"></a>
+								<a href="https://www.linkedin.com/company/speech-tactics-llc/" class="cws_social_link"
+									title="Linkedin">
+									<img src="img/social/linkedin.png"></a>
 
-                                </a>
+								</a>
 
-                                <a href="https://instagram.com/speech_tactics_nc" class="cws_social_link" title="Instagram">
-                                    <img src="img/social/instagram.png"></a>
+								<a href="https://instagram.com/speech_tactics_nc" class="cws_social_link"
+									title="Instagram">
+									<img src="img/social/instagram.png"></a>
 
-                                </a>
+								</a>
 
-                            </div>
-                        </div>
+							</div>
+						</div>
 
-                    </div>
-                </div>
-            </footer>
-            <div class='copyrights_area'>
-                <div class='half_sin_wrapper'><canvas class='footer_half_sin' data-bg-color='8, 56, 56'
-                        data-line-color='8,56,56'></canvas></div>
-                <div class='container a-center'>
-                    <div class='copyrights_container logo-center'>
-                        <div class='copyrights' style="color: white">Copyright ©2020 Speech Tactics</div>
+					</div>
+				</div>
+			</footer>
+			<div class='copyrights_area'>
+				<div class='half_sin_wrapper'><canvas class='footer_half_sin' data-bg-color='8, 56, 56'
+						data-line-color='8,56,56'></canvas></div>
+				<div class='container a-center'>
+					<div class='copyrights_container logo-center'>
+						<div class='copyrights' style="color: white">Copyright ©2020 Speech Tactics</div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="teamPopUp_container">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="teamPopUp_container">
 		<div class="team_popup_box">
 			<div class="team_popContent">
 				<span class="closetemModal"><img src="img/close.svg" alt=""></span>
@@ -1080,23 +1192,26 @@
 					<div class="title_wrap">
 						<h3 class="title">Donna Addams</h3>
 						<div class="positions"><a href="#">Occupational Therapy</a></div>
-						<p style="font-size:14px"><strong>Donna Addams</strong> is a graduate from Columbia University. She has worked as an Occupational Therapist
-                            for well over 27 years. She has a variety of work experience within the pediatric population in
-                            private clinics, schools-based settings, and early intervention. She has treated children with
-                            physical, motor, sensory, and behavioral challenges. Donna is NDT certified and has received
-                            training in Sensory Integration, Therapeutic Listening, Sensory Feeding Aversions, and
-                            Handwriting without Tears. Donna has a passion for creating a fun and engaging environment
-                            with her kids while helping them to achieve their functional independence.
-                            In her free time, Donna enjoys cooking, travelling, and spending time with her family and
-                            friends.
+						<p style="font-size:14px"><strong>Donna Addams</strong> is a graduate from Columbia University.
+							She has worked as an Occupational Therapist
+							for well over 27 years. She has a variety of work experience within the pediatric population
+							in
+							private clinics, schools-based settings, and early intervention. She has treated children
+							with
+							physical, motor, sensory, and behavioral challenges. Donna is NDT certified and has received
+							training in Sensory Integration, Therapeutic Listening, Sensory Feeding Aversions, and
+							Handwriting without Tears. Donna has a passion for creating a fun and engaging environment
+							with her kids while helping them to achieve their functional independence.
+							In her free time, Donna enjoys cooking, travelling, and spending time with her family and
+							friends.
 
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> 
-	
+	</div>
+
 
 	<!-- <div class="jaslynRoberts_container">
 		<div class="team_popup_box">
@@ -1496,50 +1611,54 @@
 			</div>
 		</div>
 	</div> <!-- /.teamPopUp_container -->
-    <!-- #page -->
-    <div class='scroll_top animated'></div>
-    <div id="lang_sel_footer">
-        <ul>
-            <li>
-                <a href="features-content-elements.html" class="lang_sel_sel"><img src="img/en.png" alt="English" class="iclflag" title="English" />&nbsp;English</a>
-            </li>
-            <li>
-                <a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
-            </li>
-            <li>
-                <a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
-            </li>
-        </ul>
-    </div>
-    <style>
-        .cws_ourteam .ourteam_item_wrapper>:last-child:not(.media_part) {
-    padding-bottom: 15px;
-}
-        .cws_ourteam .cws_ourteam_items .title{
-            font-size: 167x;
-        }
-        .cws_ourteam:not(.single) .cws_ourteam_items .positions a{
-            font-size: 13px;
-        }
-        .footer_wrapper_copyright {
-            background-color: #18a0a0;
-        }
+	<!-- #page -->
+	<div class='scroll_top animated'></div>
+	<div id="lang_sel_footer">
+		<ul>
+			<li>
+				<a href="features-content-elements.html" class="lang_sel_sel"><img src="img/en.png" alt="English"
+						class="iclflag" title="English" />&nbsp;English</a>
+			</li>
+			<li>
+				<a href="#"><img src="img/fr.png" alt="Français" class="iclflag" title="Français" />&nbsp;Français</a>
+			</li>
+			<li>
+				<a href="#"><img src="img/de.png" alt="Deutsch" class="iclflag" title="Deutsch" />&nbsp;Deutsch</a>
+			</li>
+		</ul>
+	</div>
+	<style>
+		.cws_ourteam .ourteam_item_wrapper>:last-child:not(.media_part) {
+			padding-bottom: 15px;
+		}
 
-        .grid_row:not(:first-child) {
-            padding-top: 0px;
-        }
+		.cws_ourteam .cws_ourteam_items .title {
+			font-size: 167x;
+		}
 
-        .cws_callout,
-        .header_logo_part.with_border .logo>img {
-            height: 90px;
-            width: 190px;
-        }
+		.cws_ourteam:not(.single) .cws_ourteam_items .positions a {
+			font-size: 13px;
+		}
 
-        .header_logo_part.with_border .logo {
-            background-color: white !important;
-        }
+		.footer_wrapper_copyright {
+			background-color: #18a0a0;
+		}
 
-        .team_popup_box {
+		.grid_row:not(:first-child) {
+			padding-top: 0px;
+		}
+
+		.cws_callout,
+		.header_logo_part.with_border .logo>img {
+			height: 90px;
+			width: 190px;
+		}
+
+		.header_logo_part.with_border .logo {
+			background-color: white !important;
+		}
+
+		.team_popup_box {
 			display: none;
 			position: fixed;
 			z-index: 99999;
@@ -2178,7 +2297,7 @@
 			color: #fff;
 		}
 
-        .popupLinks21 {
+		.popupLinks21 {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -2205,13 +2324,13 @@
 		.popupLinks21:hover {
 			color: #fff;
 		}
-    </style>
-    <script>
-            window.onload = function loaderPreloader() {
-                document.getElementById("bbpreloading").className = "bbpreloading hidepreloader";
-            };
-    </script>
-        
+	</style>
+	<script>
+		window.onload = function loaderPreloader() {
+			document.getElementById("bbpreloading").className = "bbpreloading hidepreloader";
+		};
+	</script>
+
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".popupLinks").click(function () {
@@ -2312,7 +2431,7 @@
 			});
 		});
 
-        jQuery(document).ready(function ($) {
+		jQuery(document).ready(function ($) {
 			$(".popupLinks21").click(function () {
 				$(".donna_container").addClass("activePop");
 			});
@@ -2405,48 +2524,48 @@
 
 	</script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script type='text/javascript' src='js/retina_1.3.0.js'></script>
-<script type='text/javascript' src='js/modernizr.js'></script>
-<script type='text/javascript' src='js/owl.carousel.js'></script>
-<script type='text/javascript' src='js/TweenMax.min.js'></script>
-<script type='text/javascript' src='js/jquery.isotope.min.js'></script>
-<script type='text/javascript' src='js/jquery.fancybox.js'></script>
-<script type='text/javascript' src='js/select2.min.js'></script>
-<script type='text/javascript' src='js/wow.min.js'></script>
-<script type='text/javascript' src='js/jquery.validate.min.js'></script>
-<script type='text/javascript' src="js/jquery.form.min.js"></script>
-<script type='text/javascript' src='js/scripts.js'></script>
-<script type='text/javascript' src="js/jquery.tweet.js"></script>
+	<script type='text/javascript' src='js/retina_1.3.0.js'></script>
+	<script type='text/javascript' src='js/modernizr.js'></script>
+	<script type='text/javascript' src='js/owl.carousel.js'></script>
+	<script type='text/javascript' src='js/TweenMax.min.js'></script>
+	<script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+	<script type='text/javascript' src='js/jquery.fancybox.js'></script>
+	<script type='text/javascript' src='js/select2.min.js'></script>
+	<script type='text/javascript' src='js/wow.min.js'></script>
+	<script type='text/javascript' src='js/jquery.validate.min.js'></script>
+	<script type='text/javascript' src="js/jquery.form.min.js"></script>
+	<script type='text/javascript' src='js/scripts.js'></script>
+	<script type='text/javascript' src="js/jquery.tweet.js"></script>
 
-<script type="text/javascript">
-	function triggerHtmlEvent(element, eventName) {
-		var event;
-		if (document.createEvent) {
-			event = document.createEvent('HTMLEvents');
-			event.initEvent(eventName, true, true);
-			element.dispatchEvent(event);
-		} else {
-			event = document.createEventObject();
-			event.eventType = eventName;
-			element.fireEvent('on' + event.eventType, event);
-		}
-	}
-
-	$('.translation-links a').click(function (e) {
-		e.preventDefault();
-		var lang = $(this).data('lang');
-		$('#google_translate_element select option').each(function () {
-			if ($(this).text().indexOf(lang) > -1) {
-				$(this).parent().val($(this).val());
-				var container = document.getElementById('google_translate_element');
-				var select = container.getElementsByTagName('select')[0];
-				triggerHtmlEvent(select, 'change');
+	<script type="text/javascript">
+		function triggerHtmlEvent(element, eventName) {
+			var event;
+			if (document.createEvent) {
+				event = document.createEvent('HTMLEvents');
+				event.initEvent(eventName, true, true);
+				element.dispatchEvent(event);
+			} else {
+				event = document.createEventObject();
+				event.eventType = eventName;
+				element.fireEvent('on' + event.eventType, event);
 			}
+		}
+
+		$('.translation-links a').click(function (e) {
+			e.preventDefault();
+			var lang = $(this).data('lang');
+			$('#google_translate_element select option').each(function () {
+				if ($(this).text().indexOf(lang) > -1) {
+					$(this).parent().val($(this).val());
+					var container = document.getElementById('google_translate_element');
+					var select = container.getElementsByTagName('select')[0];
+					triggerHtmlEvent(select, 'change');
+				}
+			});
 		});
-	});
-</script>
+	</script>
 </body>
 
 </html>
