@@ -128,7 +128,7 @@
 }
 
 h3.ce_title span {
-    color: #fec20b;
+    color: #CC3300;
 }
 
 .cws_portfolio_items .item .title_part,
@@ -281,7 +281,7 @@ input[type="radio"]:checked:before,
 .site_top_panel .site_top_panel_toggle:after,
 .footer_container .woocommerce-product-search:before,
 .scroll_top {
-    background-color: #fecc1b;
+    background-color: #CC3300;
 }
 
 .tp-leftarrow.round,
@@ -317,7 +317,7 @@ a:hover>.cws_fa_wrapper>i:not(.alt) + .ring,
 .ce .map-border,
 .wp-playlist .mejs-container,
 .lang_bar>div:not(.lang_sel_list_vertical):not(.lang_sel_list_horizontal)>ul:before {
-    border-color: #18A0A0;
+    border-color: #CC3300;
 }
 
 .select2-choice {
@@ -436,7 +436,7 @@ body.wave-style hr,
 .tp-rightarrow.round,
 .site_top_panel form.search-form .search-field,
 .testimonial .author img {
-    border-color: #fec20b;
+    border-color: #CC3300;
 }
 
 .post_info a,
